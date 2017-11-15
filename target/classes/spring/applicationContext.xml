@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+			http://www.springframework.org/schema/context
+			http://www.springframework.org/schema/context/spring-context-4.3.xsd
+			http://www.springframework.org/schema/tx
+			http://www.springframework.org/schema/tx/spring-tx-4.3.xsd
+            http://www.springframework.org/schema/aop
+            http://www.springframework.org/schema/aop/spring-aop-4.3.xsd"
+       default-lazy-init="true">
+
+    <!-- 数据库配置文件位置 -->
+    <bean id="configProperties"
+          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath*:config/*.properties</value>
+            </list>
+        </property>
+    </bean>
+
+
+    <!-- 数据库配置文 -->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"  destroy-method="close">
+        <property name="driverClass">
+            <value>oracle.jdbc.driver.OracleDriver</value>
+        </property>
+        <property name="jdbcUrl" value="jdbc:oracle:thin:@192.168.0.241:1521:ora11g"/>
+        <property name="user" value="bjdata"/>
+        <property name="password" value="bjdata"/>
+
+        <property name="maxPoolSize" value="50" />
+        <property name="minPoolSize" value="1" />
+        <property name="initialPoolSize" value="1" />
+        <property name="acquireIncrement" value="1" />
+        <!--最大空闲时间,60秒内未使用则连接被丢弃。若为0则永不丢弃。Default: 0 -->
+        <property name="maxIdleTime">
+            <value>30</value>
+        </property>
+        <!--每60秒检查所有连接池中的空闲连接。Default: 0 -->
+        <property name="idleConnectionTestPeriod">
+            <value>30</value>
+        </property>
+    </bean>
+
+    <!-- 配置mybitasSqlSessionFactoryBean -->
+    <bean id="sqlSessionFactory" name="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="configLocation" value="classpath:mybaties/mybatis.xml"></property>
+    </bean>
+
+    <!-- 配置SqlSessionTemplate -->
+    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+
+
+
+    <context:annotation-config/>
+
+    <context:component-scan base-package="com.blog.*"/>
+
+
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!-- -->
+    <aop:aspectj-autoproxy/>
+
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <aop:config>
+        <aop:advisor advice-ref="txAdvice" pointcut="execution(* com.*.*.service.*Service.*(..))"/>
+    </aop:config>
+
+    <!-- 实现类需要有接口，针对接口的方法 -->
+    <!--定义@Transactionl注解的实现类可以不需要接口 -->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="save*" propagation="REQUIRED"/>
+            <tx:method name="update*" propagation="REQUIRED"/>
+            <tx:method name="delete*" propagation="REQUIRED"/>
+            <tx:method name="logicDelete*" propagation="REQUIRED"/>
+            <tx:method name="batchDelete*" propagation="REQUIRED"/>
+            <tx:method name="batchLogicDelete*" propagation="REQUIRED"/>
+
+        </tx:attributes>
+    </tx:advice>
+
+    <!--<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">-->
+        <!--&lt;!&ndash; 国际化信息所在的文件名 &ndash;&gt;-->
+        <!--<property name="basename" value="il18config/messages" />-->
+
+        <!--&lt;!&ndash; 如果在国际化资源文件中找不到对应代码的信息，就用这个代码作为名称  &ndash;&gt;-->
+        <!--<property name="useCodeAsDefaultMessage" value="true" />-->
+    <!--</bean>-->
+
+    <bean id="contextUtil" class="com.blog.utils.ContextUtil" lazy-init="false"/>
+
+</beans>

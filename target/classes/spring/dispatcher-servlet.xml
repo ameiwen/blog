@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.3.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+    <!-- 简写的配置标记，自动注册其中的bean （RequestMappingHandlerAdapter，RequestMappingHandlerAdapter等） -->
+    <mvc:annotation-driven/>
+
+
+    <!--重复扫描的风问题 -->
+    <context:component-scan base-package="com.blog.controller"/>
+
+
+
+    <!-- 全局异常处理 -->
+   <!-- <bean id="exceptionHandler" class="com.radarwin.framework.exception.ExceptionHandler">
+        <property name="errorStatusCode" value="500"></property>
+        <property name="defaultErrorPage" value="500.html"></property>
+    </bean>-->
+
+    <!-- 基于内容协商的视图解析器,其中可以配置多个视图解析器 -->
+    <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+
+        <property name="viewResolvers">
+            <list>
+                <!-- JSP/HTML页面的视图解析器 -->
+                <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+                    <property name="prefix" value="/WEB-INF/"/>
+                    <property name="suffix" value=".jsp"/>
+                    <property name="order" value="1"/>
+                </bean>
+            </list>
+        </property>
+
+        <property name="defaultViews">
+            <list>
+                <bean class="org.springframework.web.servlet.view.json.MappingJackson2JsonView"/>
+            </list>
+        </property>
+    </bean>
+
+    <!-- 开启支持@Controller 和 @RequestMapping注解url请求的处理器。3.1 -->
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+        <property name="messageConverters">
+            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>application/json;charset=UTF-8</value>
+                        <value>text/html; charset=UTF-8</value>
+                    </list>
+                </property>
+            </bean>
+        </property>
+    </bean>
+
+    <!-- 文件上传  -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="104857600"/>
+        <property name="maxInMemorySize" value="4096"/>
+    </bean>
+    <!-- 发现是静态资源的请求，就将该请求转由Web应用服务器默认的Servlet处理，如果不是静态资源的请求，才由DispatcherServlet继续处理。  -->
+    <mvc:default-servlet-handler/>
+
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+
+    <!--&lt;!&ndash; 国际化操作拦截器 如果采用基于（请求/Session/Cookie）则必需配置 &ndash;&gt;-->
+    <!--<bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver"/>-->
+    <!--<mvc:interceptors>-->
+        <!--<bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor"/>-->
+    <!--</mvc:interceptors>-->
+
+        <!--<mvc:interceptors>-->
+            <!--<mvc:interceptor>-->
+                <!--<mvc:mapping path="/**"/>-->
+                <!--<bean class="com.blog.interceptor.CrossInterceptor"/>-->
+            <!--</mvc:interceptor>-->
+            <!--<mvc:interceptor>-->
+                <!--<mvc:mapping path="/chat/**"/>-->
+                <!--<mvc:mapping path="/account/**"/>-->
+                <!--<mvc:mapping path="/user/**"/>-->
+                <!--<mvc:mapping path="/order/**"/>-->
+                <!--<mvc:mapping path="/ad/**"/>-->
+                <!--<bean class="com.blog.interceptor.LoginInterceptor"/>-->
+            <!--</mvc:interceptor>-->
+        <!--</mvc:interceptors>-->
+</beans>
