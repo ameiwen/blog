@@ -34,7 +34,7 @@
             <list>
                 <!-- JSP/HTML页面的视图解析器 -->
                 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-                    <property name="prefix" value="/WEB-INF/"/>
+                    <property name="prefix" value="/page/"/>
                     <property name="suffix" value=".jsp"/>
                     <property name="order" value="1"/>
                 </bean>
