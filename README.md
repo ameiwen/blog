@@ -1,3 +1,2 @@
 # yanghb
-blog
-this is my blog project.
+This is my blog project.
