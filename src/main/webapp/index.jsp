@@ -119,4 +119,5 @@
 <%@ include file="core/foot.jsp" %>
 </body>
 <script src="js/silder.js"></script>
+<script src="js/modernizr.js"></script>
 </html>
