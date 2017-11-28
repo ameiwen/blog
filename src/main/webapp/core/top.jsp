@@ -6,7 +6,7 @@
         <a href="/"></a>
     </div>
     <nav class="topnav" id="topnav">
-        <a href="${ctx}/index.jsp"><span>首页</span><span class="en">Protal</span></a>
+        <a href="${ctx}/page/index.jsp"><span>首页</span><span class="en">Protal</span></a>
         <a href="${ctx}/page/life.jsp"><span>慢生活</span><span class="en">Life</span></a>
         <a href="${ctx}/page/moonlist.jsp"><span>碎言碎语</span><span class="en">Doing</span></a>
         <a href="${ctx}/page/share.jsp"><span>模板分享</span><span class="en">Share</span></a>
