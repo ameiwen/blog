@@ -4,8 +4,8 @@
 <head>
     <title>个人博客 - 博客网站</title>
     <%@ include file="commons/meta.jsp" %>
-    <link href="css/base.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+    <link href="${ctx}/css/base.css" rel="stylesheet">
+    <link href="${ctx}/css/index.css" rel="stylesheet">
 </head>
 <body>
 <%@ include file="core/top.jsp" %>

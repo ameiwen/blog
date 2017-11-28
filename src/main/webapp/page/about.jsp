@@ -3,9 +3,10 @@
 <%@ include file="../commons/taglibs.jsp" %>
 <html>
 <head>
-    <title>Title</title>
-    <link href="css/base.css" rel="stylesheet">
-    <link href="css/about.css" rel="stylesheet">
+    <title>个人博客 - 博客网站</title>
+    <%@ include file="../commons/meta.jsp" %>
+    <link href="${ctx}/css/base.css" rel="stylesheet">
+    <link href="${ctx}/css/about.css" rel="stylesheet">
 </head>
 <body>
 
