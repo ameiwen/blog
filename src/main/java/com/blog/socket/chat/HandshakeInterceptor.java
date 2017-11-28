@@ -31,7 +31,7 @@ public class HandshakeInterceptor implements org.springframework.web.socket.serv
             if(!Misc.isStringEmpty(sessionUserId)){
                 map.put("sessionUserId", new StringBuffer(oid).append("_").append(sessionUserId).toString());
             }else{
-                return false;
+                return true;
             }
         }
         return true;

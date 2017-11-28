@@ -21,12 +21,12 @@ public abstract class P2PSocketHandler {
     private static final Map<String, P2PSocketHandler> handlerMap = new ConcurrentHashMap<>();
 
     private static final ChatHandler chatHandler = new ChatHandler();
-//    private static final SimpleUserHandler simpleUserHandler = new SimpleUserHandler();
+    private static final SimpleUserHandler simpleUserHandler = new SimpleUserHandler();
 
     static {
         handlerMap.put("chat",chatHandler);//聊天
 //        handlerMap.put("show_appeal_p2p",simpleUserHandler);//申诉按钮显示通知
-//        handlerMap.put("transaction_p2p",simpleUserHandler);//交易完成通知
+        handlerMap.put("transaction_p2p",simpleUserHandler);//交易完成通知
     }
 
     public static void handle(ChannelRequest channelRequest, WebSocketSession session, WebSocketMessage<?> message) {
