@@ -463,12 +463,8 @@
         <cache.redis.host>127.0.0.1:6379</cache.redis.host>
         <cache.redis.enableCluster>0</cache.redis.enableCluster>
 
-        <QRCodePath>D:/tomcat7/apache-tomcat-7.0.53/webapps/btcimg/u/img</QRCodePath>
-        <QRCodePtPath>/btcimg/u/img</QRCodePtPath>
-        <ChatImgPath>E:/jetty/jetty9_idea/webapps/btcimg/chat/img</ChatImgPath>
-        <ChatImgPtPath>/btcimg/chat/img</ChatImgPtPath>
-        <AppealImgPath>D:/tomcat7/apache-tomcat-7.0.53/webapps/btcimg/appeal/img</AppealImgPath>
-        <AppealImgPtPath>/btcimg/appeal/img</AppealImgPtPath>
+        <UEditorPath>D:/tomcat7/apache-tomcat-7.0.53/webapps/btcimg/u/img</UEditorPath>
+        <UEditorPtPath>/btcimg/u/img</UEditorPtPath>
         <img.host>http://localhost:8090</img.host>
 
         <front.webSocket.allowOrigins>*,</front.webSocket.allowOrigins>

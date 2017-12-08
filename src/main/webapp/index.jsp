@@ -1,4 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ include file="commons/meta.jsp" %>
+<%@ include file="commons/taglibs.jsp" %>
 <html>
 <head>
     <title>Title</title>
@@ -71,6 +73,7 @@
 <button id="disconnect" onclick="disconnect()"/>disconnect</button><br>
 <input id="message" value="send message"/>
 <button onclick="sendName()">发送消息</button>
+<a href="${ctx}/page/Demo.jsp">UEdictDemo</a>
 <div id="response"></div>
 </body>
 </html>
