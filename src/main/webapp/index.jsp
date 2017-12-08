@@ -73,7 +73,7 @@
 <button id="disconnect" onclick="disconnect()"/>disconnect</button><br>
 <input id="message" value="send message"/>
 <button onclick="sendName()">发送消息</button>
-<a href="${ctx}/page/ueditor.jsp.jsp">UEdictDemo</a>
+<a href="${ctx}/page/ueditor.jsp">UEdictDemo</a>
 <div id="response"></div>
 </body>
 </html>
