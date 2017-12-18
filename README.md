@@ -1,2 +1,1 @@
-# yanghb
-This is my blog project.
+There is a single blog
