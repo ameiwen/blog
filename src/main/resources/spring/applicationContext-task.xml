@@ -11,8 +11,8 @@
     <task:annotation-driven/>
 
      <!--定时任务 -->
-    <bean id="chatTask" class="com.blog.task.DemoTask" />
-    <task:scheduled-tasks>
-        <task:scheduled ref="chatTask" method="fistTask" cron="0/5 * * * * ?"/>
-    </task:scheduled-tasks>
-</beans>
+    <bean id="demoTask" class="com.blog.task.DemoTask" />
+        <task:scheduled-tasks>
+            <task:scheduled ref="demoTask" method="fistTask" cron="0/5 * * * * ?"/>
+        </task:scheduled-tasks>
+    </beans>
