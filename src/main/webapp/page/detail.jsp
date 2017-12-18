@@ -1,97 +1,115 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ include file="../commons/meta.jsp" %>
-<%@ include file="../commons/taglibs.jsp" %>
 <html>
 <head>
-    <title>个人博客 - 博客网站</title>
-    <link href="${ctx}/css/base.css" rel="stylesheet">
-    <link href="${ctx}/css/new.css" rel="stylesheet">
+    <title>Blog</title>
+    <%@ include file="../commons/meta.jsp" %>
+    <link rel="stylesheet" href="${ctx}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="${ctx}/css/pace.css">
+    <link rel="stylesheet" href="${ctx}/css/custom.css">
+    <link rel="stylesheet" href="${ctx}/css/qu.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body>
-<%@ include file="../core/top.jsp" %>
-<article class="blogs">
-    <h1 class="t_nav"><span>您当前的位置：<a href="/index.html">首页</a>&nbsp;&gt;&nbsp;<a href="/news/s/">慢生活</a>&nbsp;&gt;&nbsp;<a href="/news/s/">日记</a></span><a href="/" class="n1">网站首页</a><a href="/" class="n2">日记</a></h1>
-    <div class="index_about">
-        <h2 class="c_titile">爱情不容有错，即使错了那就重来</h2>
-        <p class="box_c"><span class="d_time">发布时间：2013-09-08</span><span>编辑：杨青</span><span>互动QQ群：<a href="http://wp.qq.com/wpa/qunwpa?idkey=d4d4a26952d46d564ee5bf7782743a70d5a8c405f4f9a33a60b0eec380743c64">280998807</a></span></p>
-        <ul class="infos">
-            <p>进一好友空间，再一次看到她置顶的那一篇《他和她的故事》爱情在他俩的生活中经历了不少分分合合，但最后俩人还是走在了一起。当今天再一次阅读的时候，我没有第一次那么感性，我注重他们俩曲折的过程，其中出现过第三者...</p>
-            <p>如果我是她，对于他当初的脚踏两只船、尽管仍然说爱但亦然离开而选择别人，我很肯定我是无法原谅他的，也许你会说是因为我不是真正爱他吧，我也不知道，这是不是因为爱得不够深，不能包容他的过错...我是很小气的人，就像很多人说的那样，一年365天，你364天对她好，只要有一天对她不好，她也会在n天也许n年后提出来，你哪天对我不好。</p>
-            <p><img src="images/e5e39b1148811261c78b933805d07232.png" alt="分手"></p>
-            <p>大学时跟我分分合合的男朋友，却是这么一个爱犯错的人。跟他交往，会有意无意的伤到我自尊，至今我也那么认为那伤害了我的自尊。在我骨子里有一种骄傲和很强的自尊，而他却偏偏伤了一次又一次。他的朋友都说我小气，我至今也觉得如果我不小气，那就是我傻！</p>
-            <p>我认为大学时的恋爱，是毕业前进入社会的一次恋爱实习。参杂了很多的疑问和抉择。就像工作，从销售到文员到编辑到技术员，最后才知道什么工作适合自己。找一个人陪你恋爱实习，也许很简单，也许很难。</p>
-            <p>这么多年过去了，当初分手都会舍不得那段4年的感情，后来也是时间煮了这段记忆。现在我们各自有了各自的生活，他也找到了他心仪的女孩，我能感觉出他们俩很相爱，当初最后一次分手的过渡时间，无论有多么的不舍与难熬，现在看看都是正确的。</p>
-            <p><img src="images/1f8aea2172f6eb987c3de3f7ba474eb1.png" alt="分手"></p>
-            <p>为何我会毅然放弃，因为在我心里，那些过去的伤，那些不好的记忆永远都抹不去，我无法面对，哪怕是当初妥协了，我想最后我也一定会再一次选择放弃....</p>
-            <p>我觉得爱情也可以重新来过，只是换换主角罢了...</p>
-        </ul>
-        <div class="keybq">
-            <p><span>关键字词</span>：爱情,犯错,原谅,分手</p>
+<jsp:include page="../core/top.jsp"/>
+<div class="content-body">
+    <div class="container">
+        <div class="row">
+            <main class="col-md-8">
+                <article class="post post-1">
+                    <header class="entry-header">
+                        <h1 class="entry-title">Adaptive Vs. Responsive Layouts And Optimal Text Readability</h1>
+                        <div class="entry-meta">
+                            <span class="post-category"><a href="#">Web Design</a></span>
 
-        </div>
-        <div class="ad"> </div>
-        <div class="nextinfo">
-            <p>上一篇：<a href="/news/s/2013-09-04/606.html">程序员应该如何高效的工作学习</a></p>
-            <p>下一篇：<a href="/news/s/2013-10-21/616.html">柴米油盐的生活才是真实</a></p>
-        </div>
-        <div class="otherlink">
-            <h2>相关文章</h2>
-            <ul>
-                <li><a href="/news/s/2013-07-25/524.html" title="现在，我相信爱情！">现在，我相信爱情！</a></li>
-                <li><a href="/newstalk/mood/2013-07-24/518.html" title="我希望我的爱情是这样的">我希望我的爱情是这样的</a></li>
-                <li><a href="/newstalk/mood/2013-07-02/335.html" title="有种情谊，不是爱情，也算不得友情">有种情谊，不是爱情，也算不得友情</a></li>
-                <li><a href="/newstalk/mood/2013-07-01/329.html" title="世上最美好的爱情">世上最美好的爱情</a></li>
-                <li><a href="/news/read/2013-06-11/213.html" title="爱情没有永远，地老天荒也走不完">爱情没有永远，地老天荒也走不完</a></li>
-                <li><a href="/news/s/2013-06-06/24.html" title="爱情的背叛者">爱情的背叛者</a></li>
-            </ul>
+                            <span class="post-date"><a href="#"><time class="entry-date" datetime="2012-11-09T23:15:57+00:00">February 2, 2013</time></a></span>
+
+                            <span class="post-author"><a href="#">Albert Einstein</a></span>
+
+                            <span class="comments-link"><a href="#">4 Comments</a></span>
+                        </div>
+                    </header>
+                    <div class="entry-content clearfix">
+                        <p>Responsive web design offers us a way forward, finally allowing us to design for the ebb and flow of things. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly.</p>
+                        <p>Responsive web design offers us a way forward, finally allowing us to design for the ebb and flow of things. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly.</p>
+                        <p>Responsive web design offers us a way forward, finally allowing us to design for the ebb and flow of things. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly.</p>
+                        <p>Responsive web design offers us a way forward, finally allowing us to design for the ebb and flow of things. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly.</p>
+                    </div>
+                </article>
+            </main>
+            <aside class="col-md-4">
+                <div class="widget widget-recent-posts">
+                    <h3 class="widget-title">Recent Posts</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Adaptive Vs. Responsive Layouts And Optimal Text Readability</a>
+                        </li>
+                        <li>
+                            <a href="#">Web Design is 95% Typography</a>
+                        </li>
+                        <li>
+                            <a href="#">Paper by FiftyThree</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget widget-archives">
+                    <h3 class="widget-title">Archives</h3>
+                    <ul>
+                        <li>
+                            <a href="#">November 2014</a>
+                        </li>
+                        <li>
+                            <a href="#">September 2014</a>
+                        </li>
+                        <li>
+                            <a href="#">January 2013</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="widget widget-category">
+                    <h3 class="widget-title">Category</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Web Design</a>
+                        </li>
+                        <li>
+                            <a href="#">Web Development</a>
+                        </li>
+                        <li>
+                            <a href="#">SEO</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="widget widget-category">
+                    <h3 class="widget-title">Tag Cloud</h3>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+				        <span class="tag-list">
+                            <a href="/resource/fortype/1 " class="hot-label " target="_self">JAVA</a>
+                            <a href="/resource/fortype/2 " class="hot-label " target="_self">开发工具</a>
+                            <a href="/resource/fortype/3 " class="hot-label " target="_self">使用手册</a>
+                            <a href="/resource/fortype/4 " class="hot-label " target="_self">算法</a>
+                            <a href="/resource/fortype/5 " class="hot-label " target="_self">架构</a>
+                            <a href="/resource/fortype/6 " class="hot-label " target="_self">数据库</a>
+                            <a href="/resource/fortype/7 " class="hot-label " target="_self">框架技术</a>
+                            <a href="/resource/fortype/8 " class="hot-label " target="_self">网页模板</a>
+					    </span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
         </div>
     </div>
-    <aside class="right">
-        <!-- Baidu Button BEGIN -->
-        <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare"><a class="bds_tsina"></a><a class="bds_qzone"></a><a class="bds_tqq"></a><a class="bds_renren"></a><span class="bds_more"></span><a class="shareCount"></a></div>
-        <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6574585" ></script>
-        <script type="text/javascript" id="bdshell_js"></script>
-        <script type="text/javascript">
-            document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
-        </script>
-        <!-- Baidu Button END -->
-        <div class="blank"></div>
-        <div class="news">
-            <h3>
-                <p>栏目<span>最新</span></p>
-            </h3>
-            <ul class="rank">
-                <li><a href="/" title="Column 三栏布局 个人网站模板" target="_blank">Column 三栏布局 个人网站模板</a></li>
-                <li><a href="/" title="with love for you 个人网站模板" target="_blank">with love for you 个人网站模板</a></li>
-                <li><a href="/" title="免费收录网站搜索引擎登录口大全" target="_blank">免费收录网站搜索引擎登录口大全</a></li>
-                <li><a href="/" title="做网站到底需要什么?" target="_blank">做网站到底需要什么?</a></li>
-                <li><a href="/" title="企业做网站具体流程步骤" target="_blank">企业做网站具体流程步骤</a></li>
-                <li><a href="/" title="建站流程篇――教你如何快速学会做网站" target="_blank">建站流程篇――教你如何快速学会做网站</a></li>
-                <li><a href="/" title="box-shadow 阴影右下脚折边效果" target="_blank">box-shadow 阴影右下脚折边效果</a></li>
-                <li><a href="/" title="打雷时室内、户外应该需要注意什么" target="_blank">打雷时室内、户外应该需要注意什么</a></li>
-            </ul>
-            <h3 class="ph">
-                <p>点击<span>排行</span></p>
-            </h3>
-            <ul class="paih">
-                <li><a href="/" title="Column 三栏布局 个人网站模板" target="_blank">Column 三栏布局 个人网站模板</a></li>
-                <li><a href="/" title="withlove for you 个人网站模板" target="_blank">with love for you 个人网站模板</a></li>
-                <li><a href="/" title="免费收录网站搜索引擎登录口大全" target="_blank">免费收录网站搜索引擎登录口大全</a></li>
-                <li><a href="/" title="做网站到底需要什么?" target="_blank">做网站到底需要什么?</a></li>
-                <li><a href="/" title="企业做网站具体流程步骤" target="_blank">企业做网站具体流程步骤</a></li>
-            </ul>
-        </div>
-        <div class="visitors">
-            <h3>
-                <p>最近访客</p>
-            </h3>
-            <ul>
-            </ul>
-        </div>
-    </aside>
-</article>
-<%@ include file="../core/foot.jsp" %>
+</div>
+<jsp:include page="../core/foot.jsp"/>
+<!-- Mobile Menu -->
+<jsp:include page="../core/mobile.jsp"/>
 </body>
-<script src="js/modernizr.js"></script>
-<script src="js/silder.js"></script>
+<!-- js -->
+<script src="${ctx}/js/jquery-3.2.1.js"></script>
+<script src="${ctx}/js/bootstrap.min.js"></script>
+<script src="${ctx}/js/pace.min.js"></script>
+<script src="${ctx}/js/modernizr.custom.js"></script>
+<script src="${ctx}/js/script.js"></script>
 </html>

@@ -2,122 +2,105 @@
 <%@ include file="commons/taglibs.jsp" %>
 <html>
 <head>
-    <title>个人博客 - 博客网站</title>
+    <title>Blog</title>
     <%@ include file="commons/meta.jsp" %>
-    <link href="${ctx}/css/base.css" rel="stylesheet">
-    <link href="${ctx}/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="${ctx}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="${ctx}/css/pace.css">
+    <link rel="stylesheet" href="${ctx}/css/custom.css">
+    <link rel="stylesheet" href="${ctx}/css/qu.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body>
-<%@ include file="core/top.jsp" %>
-<div class="banner">
-    <section class="box">
-        <ul class="texts">
-            <p>打了死结的青春，捆死一颗苍白绝望的灵魂。</p>
-            <p>为自己掘一个坟墓来葬心，红尘一梦，不再追寻。</p>
-            <p>加了锁的青春，不会再因谁而推开心门。</p>
-        </ul>
-        <div class="avatar"><a href="#"><span>杨青</span></a></div>
-    </section>
-</div>
-<article>
-    <h2 class="title_tj">
-        <p>文章<span>推荐</span></p>
-    </h2>
-    <div class="bloglist left">
-        <h3>程序员请放下你的技术情节，与你的同伴一起进步</h3>
-        <figure><img src="images/001.png"></figure>
-        <ul>
-            <p>如果说掌握一门赖以生计的技术是技术人员要学会的第一课的话， 那么我觉得技术人员要真正学会的第二课，不是技术，而是业务、交流与协作，学会关心其他工作伙伴的工作情况和进展...</p>
-            <a title="/" href="/" target="_blank" class="readmore">阅读全文>></a>
-        </ul>
-        <p class="dateview"><span>2013-11-04</span><span>作者：杨青</span><span>个人博客：[<a href="/news/life/">程序人生</a>]</span>
-        </p>
-        <h3>程序员请放下你的技术情节，与你的同伴一起进步</h3>
-        <figure><img src="images/001.png"></figure>
-        <ul>
-            <p>如果说掌握一门赖以生计的技术是技术人员要学会的第一课的话， 那么我觉得技术人员要真正学会的第二课，不是技术，而是业务、交流与协作，学会关心其他工作伙伴的工作情况和进展...</p>
-            <a title="/" href="/" target="_blank" class="readmore">阅读全文>></a>
-        </ul>
-        <p class="dateview"><span>2013-11-04</span><span>作者：杨青</span><span>个人博客：[<a href="/news/life/">程序人生</a>]</span>
-        </p>
-        <h3>程序员请放下你的技术情节，与你的同伴一起进步</h3>
-        <figure><img src="images/001.png"></figure>
-        <ul>
-            <p>如果说掌握一门赖以生计的技术是技术人员要学会的第一课的话， 那么我觉得技术人员要真正学会的第二课，不是技术，而是业务、交流与协作，学会关心其他工作伙伴的工作情况和进展...</p>
-            <a title="/" href="/" target="_blank" class="readmore">阅读全文>></a>
-        </ul>
-        <p class="dateview"><span>2013-11-04</span><span>作者：杨青</span><span>个人博客：[<a href="/news/life/">程序人生</a>]</span>
-        </p>
-        <h3>程序员请放下你的技术情节，与你的同伴一起进步</h3>
-        <figure><img src="images/001.png"></figure>
-        <ul>
-            <p>如果说掌握一门赖以生计的技术是技术人员要学会的第一课的话， 那么我觉得技术人员要真正学会的第二课，不是技术，而是业务、交流与协作，学会关心其他工作伙伴的工作情况和进展...</p>
-            <a title="/" href="/" target="_blank" class="readmore">阅读全文>></a>
-        </ul>
-        <p class="dateview"><span>2013-11-04</span><span>作者：杨青</span><span>个人博客：[<a href="/news/life/">程序人生</a>]</span>
-        </p>
-        <h3>程序员请放下你的技术情节，与你的同伴一起进步</h3>
-        <figure><img src="images/001.png"></figure>
-        <ul>
-            <p>如果说掌握一门赖以生计的技术是技术人员要学会的第一课的话， 那么我觉得技术人员要真正学会的第二课，不是技术，而是业务、交流与协作，学会关心其他工作伙伴的工作情况和进展...</p>
-            <a title="/" href="/" target="_blank" class="readmore">阅读全文>></a>
-        </ul>
-        <p class="dateview"><span>2013-11-04</span><span>作者：杨青</span><span>个人博客：[<a href="/news/life/">程序人生</a>]</span>
-        </p>
+<jsp:include page="core/top.jsp"/>
+<div class="content-body">
+    <div class="container">
+        <div class="row">
+            <main class="col-md-8">
+                <article class="post post-1">
+                    <header class="entry-header">
+                        <h1 class="entry-title">
+                            <a href="single.html">Adaptive Vs. Responsive Layouts And Optimal Text Readability</a>
+                        </h1>
+                        <div class="entry-meta">
+                            <span class="post-category"><a href="#">Web Design</a></span>
+
+                            <span class="post-date"><a href="#"><time class="entry-date"
+                                                                      datetime="2012-11-09T23:15:57+00:00">February 2, 2013</time></a></span>
+
+                            <span class="post-author"><a href="#">Albert Einstein</a></span>
+
+                            <span class="comments-link"><a href="#">4 Comments</a></span>
+                        </div>
+                    </header>
+                    <div class="entry-content clearfix">
+                        <p>Responsive web design offers us a way forward, finally allowing us to design for the ebb and
+                            flow of things. There are many variations of passages of Lorem Ipsum available, but the
+                            majority have suffered alteration in some form, by injected humour, or randomised words
+                            which don’t look even slightly.</p>
+                        <div class="read-more cl-effect-14">
+                            <a href="${ctx}/page/detail.jsp" class="more-link">
+                                Continue reading <span class="meta-nav">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </main>
+            <aside class="col-md-4">
+                <div class="widget widget-recent-posts">
+                    <h3 class="widget-title">Recent Posts</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Adaptive Vs. Responsive Layouts And Optimal Text Readability</a>
+                        </li>
+                        <li>
+                            <a href="#">Web Design is 95% Typography</a>
+                        </li>
+                        <li>
+                            <a href="#">Paper by FiftyThree</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget widget-archives">
+                    <h3 class="widget-title">Archives</h3>
+                    <ul>
+                        <li>
+                            <a href="#">November 2014</a>
+                        </li>
+                        <li>
+                            <a href="#">September 2014</a>
+                        </li>
+                        <li>
+                            <a href="#">January 2013</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="widget widget-category">
+                    <h3 class="widget-title">Category</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Web Design</a>
+                        </li>
+                        <li>
+                            <a href="#">Web Development</a>
+                        </li>
+                        <li>
+                            <a href="#">SEO</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
     </div>
-    <aside class="right">
-        <div class="weather">
-            <iframe width="250" scrolling="no" height="60" frameborder="0" allowtransparency="true"
-                    src="http://i.tianqi.com/index.php?c=code&id=12&icon=1&num=1"></iframe>
-        </div>
-        <div class="news">
-            <h3>
-                <p>最新<span>文章</span></p>
-            </h3>
-            <ul class="rank">
-                <li><a href="/" title="Column 三栏布局 个人网站模板" target="_blank">Column 三栏布局 个人网站模板</a></li>
-                <li><a href="/" title="with love for you 个人网站模板" target="_blank">with love for you 个人网站模板</a></li>
-                <li><a href="/" title="免费收录网站搜索引擎登录口大全" target="_blank">免费收录网站搜索引擎登录口大全</a></li>
-                <li><a href="/" title="做网站到底需要什么?" target="_blank">做网站到底需要什么?</a></li>
-                <li><a href="/" title="企业做网站具体流程步骤" target="_blank">企业做网站具体流程步骤</a></li>
-                <li><a href="/" title="建站流程篇――教你如何快速学会做网站" target="_blank">建站流程篇――教你如何快速学会做网站</a></li>
-                <li><a href="/" title="box-shadow 阴影右下脚折边效果" target="_blank">box-shadow 阴影右下脚折边效果</a></li>
-                <li><a href="/" title="打雷时室内、户外应该需要注意什么" target="_blank">打雷时室内、户外应该需要注意什么</a></li>
-            </ul>
-            <h3 class="ph">
-                <p>点击<span>排行</span></p>
-            </h3>
-            <ul class="paih">
-                <li><a href="/" title="Column 三栏布局 个人网站模板" target="_blank">Column 三栏布局 个人网站模板</a></li>
-                <li><a href="/" title="withlove for you 个人网站模板" target="_blank">with love for you 个人网站模板</a></li>
-                <li><a href="/" title="免费收录网站搜索引擎登录口大全" target="_blank">免费收录网站搜索引擎登录口大全</a></li>
-                <li><a href="/" title="做网站到底需要什么?" target="_blank">做网站到底需要什么?</a></li>
-                <li><a href="/" title="企业做网站具体流程步骤" target="_blank">企业做网站具体流程步骤</a></li>
-            </ul>
-            <h3 class="links">
-                <p>友情<span>链接</span></p>
-            </h3>
-            <ul class="website">
-                <li><a href="/">个人博客</a></li>
-                <li><a href="/">谢泽文个人博客</a></li>
-                <li><a href="/">3DST技术网</a></li>
-                <li><a href="/">思衡网络</a></li>
-            </ul>
-        </div>
-        <!-- Baidu Button BEGIN -->
-        <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare"><a class="bds_tsina"></a><a
-                class="bds_qzone"></a><a class="bds_tqq"></a><a class="bds_renren"></a><span class="bds_more"></span><a
-                class="shareCount"></a></div>
-        <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6574585"></script>
-        <script type="text/javascript" id="bdshell_js"></script>
-        <script type="text/javascript">
-            document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() / 3600000)
-        </script>
-        <!-- Baidu Button END -->
-        <a href="/" class="weixin"> </a></aside>
-</article>
-<%@ include file="core/foot.jsp" %>
+</div>
+<jsp:include page="core/foot.jsp"/>
+<!-- Mobile Menu -->
+<jsp:include page="/core/mobile.jsp"/>
 </body>
-<script src="js/silder.js"></script>
-<script src="js/modernizr.js"></script>
+<!-- js -->
+<script src="${ctx}/js/jquery-3.2.1.js"></script>
+<script src="${ctx}/js/bootstrap.min.js"></script>
+<script src="${ctx}/js/pace.min.js"></script>
+<script src="${ctx}/js/modernizr.custom.js"></script>
+<script src="${ctx}/js/script.js"></script>
 </html>

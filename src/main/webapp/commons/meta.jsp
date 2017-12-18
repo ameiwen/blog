@@ -1,5 +1,3 @@
-<meta name="keywords" content="个人博客,博客,技术" />
-<meta name="description" content="个人博客，个人网站" />
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <meta http-equiv="Cache-Control" content="no-store"/>
 <meta http-equiv="Pragma" content="no-cache"/>

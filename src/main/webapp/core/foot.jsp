@@ -1,5 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<footer>
-    <p>Design by DanceSmile <a href="javascript:void(0);" target="_blank">蜀ICP备11002373号-1</a>
-        <a href="/">网站统计</a></p>
+<footer id="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="copyright">&copy; 2014 ThemeWagon.com -More Templates</p>
+            </div>
+        </div>
+    </div>
 </footer>
