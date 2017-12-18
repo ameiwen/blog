@@ -10,68 +10,58 @@
 <body>
 <%@ include file="../core/top.jsp" %>
 <article class="blogs">
-    <h1 class="t_nav"><span>我们长路漫漫，只因学无止境。 </span><a href="/" class="n1">网站首页</a><a href="/" class="n2">学无止境</a></h1>
+    <h1 class="t_nav"><span>“慢生活”不是懒惰，放慢速度不是拖延时间，而是让我们在生活中寻找到平衡。</span><a href="/" class="n1">网站首页</a><a href="/" class="n2">慢生活</a></h1>
     <div class="newblog left">
-        <h2>仿新浪博客风格・梅――古典个人博客模板</h2>
-        <p class="dateview"><span>发布时间：2013-11-04</span><span>作者：杨青</span><span>分类：[<a
-                href="/news/life/">个人博客模板</a>]</span></p>
-        <figure><img src="images/01.jpg"></figure>
+        <h2>程序员请放下你的技术情节，与你的同伴一起进步</h2>
+        <p class="dateview"><span>发布时间：2013-11-04</span><span>作者：杨青</span><span>分类：[<a href="/news/life/">程序人生</a>]</span></p>
+        <figure><img src="images/001.png"></figure>
         <ul class="nlist">
-            <p>界面设计非原创，出自新浪博客风格・梅作者水云心。在原来的设计上增加了梅花飘落的flash动画。原设计的边界阴影部分用图片实现，本例采用css3新的规则属性，box-shadow</p>
-            <a title="/" href="/" target="_blank" class="readmore">详细信息>></a>
+            <p>如果说掌握一门赖以生计的技术是技术人员要学会的第一课的话， 那么我觉得技术人员要真正学会的第二课，不是技术，而是业务、交流与协作，学会关心其他工作伙伴的工作情况和进展...</p>
+            <a title="/" href="${ctx}/page/detail.jsp" target="_blank" class="readmore">阅读全文>></a>
         </ul>
         <div class="line"></div>
-        <h2>黑色质感时间轴html5个人博客模板</h2>
-        <p class="dateview"><span>发布时间：2013-11-04</span><span>作者：杨青</span><span>分类：[<a
-                href="/news/life/">个人博客模板</a>]</span></p>
-        <figure><img src="images/02.jpg"></figure>
+        <h2>程序员请放下你的技术情节，与你的同伴一起进步</h2>
+        <p class="dateview"><span>发布时间：2013-11-04</span><span>作者：杨青</span><span>分类：[<a href="/news/life/">程序人生</a>]</span></p>
+        <figure><img src="images/001.png"></figure>
         <ul class="nlist">
-            <p>
-                黑色时间轴html5个人博客模板颜色以黑色为主色，添加了彩色作为网页的一个亮点，导航高亮显示、banner图片鼠标划过，可以看到隐藏的文字。css3动画应用在banner和右边“我的名片”个人信息。重点在时间轴部分，三角形和圆形均是css代码写出来的，postion定位，增加页面返回到顶部的代码....</p>
-            <a title="/" href="/" target="_blank" class="readmore">详细信息>></a>
+            <p>如果说掌握一门赖以生计的技术是技术人员要学会的第一课的话， 那么我觉得技术人员要真正学会的第二课，不是技术，而是业务、交流与协作，学会关心其他工作伙伴的工作情况和进展...</p>
+            <a title="/" href="/" target="_blank" class="readmore">阅读全文>></a>
         </ul>
         <div class="line"></div>
-        <h2>Green绿色小清新的夏天-个人博客模板</h2>
-        <p class="dateview"><span>发布时间：2013-11-04</span><span>作者：杨青</span><span>分类：[<a
-                href="/news/life/">个人博客模板</a>]</span></p>
-        <figure><img src="images/03.jpg"></figure>
+        <h2>程序员请放下你的技术情节，与你的同伴一起进步</h2>
+        <p class="dateview"><span>发布时间：2013-11-04</span><span>作者：杨青</span><span>分类：[<a href="/news/life/">程序人生</a>]</span></p>
+        <figure><img src="images/001.png"></figure>
         <ul class="nlist">
-            <p>这是一个有关Green绿色小清新的夏天的css3 html5绿色个人博客网站模板，导航下面的效果使用了CSS3 Animation 实现对象从右到左渐变的动画效果。</p>
-            <a title="/" href="/" target="_blank" class="readmore">详细信息>></a>
+            <p>如果说掌握一门赖以生计的技术是技术人员要学会的第一课的话， 那么我觉得技术人员要真正学会的第二课，不是技术，而是业务、交流与协作，学会关心其他工作伙伴的工作情况和进展...</p>
+            <a title="/" href="/" target="_blank" class="readmore">阅读全文>></a>
         </ul>
         <div class="line"></div>
-        <h2>女生清新个人博客网站模板</h2>
-        <p class="dateview"><span>发布时间：2013-11-04</span><span>作者：杨青</span><span>分类：[<a
-                href="/news/life/">个人博客模板</a>]</span></p>
-        <figure><img src="images/04.jpg"></figure>
+        <h2>程序员请放下你的技术情节，与你的同伴一起进步</h2>
+        <p class="dateview"><span>发布时间：2013-11-04</span><span>作者：杨青</span><span>分类：[<a href="/news/life/">程序人生</a>]</span></p>
+        <figure><img src="images/001.png"></figure>
         <ul class="nlist">
-            <p>
-                这是一个html5+css个人博客模板，顶部导航用了css3的gradient背景颜色渐变效果，结合js，对当前栏目高亮显示并且skew水平倾斜的效果。左侧头像也用了css3鼠标放上去滑动出文字的效果...</p>
-            <a title="/" href="/" target="_blank" class="readmore">详细信息>></a>
+            <p>如果说掌握一门赖以生计的技术是技术人员要学会的第一课的话， 那么我觉得技术人员要真正学会的第二课，不是技术，而是业务、交流与协作，学会关心其他工作伙伴的工作情况和进展...</p>
+            <a title="/" href="/" target="_blank" class="readmore">阅读全文>></a>
         </ul>
         <div class="line"></div>
         <div class="blank"></div>
         <div class="ad">
             <img src="images/ad.png">
         </div>
-        <div class="page"><a title="Total record"><b>41</b></a><b>1</b><a href="/news/s/index_2.html">2</a><a
-                href="/news/s/index_2.html">&gt;</a><a href="/news/s/index_2.html">&gt;&gt;</a></div>
+        <div class="page"><a title="Total record"><b>41</b></a><b>1</b><a href="/news/s/index_2.html">2</a><a href="/news/s/index_2.html">&gt;</a><a href="/news/s/index_2.html">&gt;&gt;</a></div>
     </div>
     <aside class="right">
         <div class="rnav">
-            <h2>栏目导航</h2>
             <ul>
-                <li><a href="/download/" target="_blank">CSS3|Html5</a></li>
-                <li><a href="/newsfree/" target="_blank">推荐工具</a></li>
-                <li><a href="/newsfree/" target="_blank">心得笔记</a></li>
-                <li><a href="/newsfree/" target="_blank">IP查询</a></li>
-                <li><a href="/newsfree/" target="_blank">JS经典实例</a></li>
-                <li><a href="/newsfree/" target="_blank">网站建设</a></li>
+                <li class="rnav1"><a href="/download/" target="_blank">日记</a></li>
+                <li class="rnav2"><a href="/newsfree/" target="_blank">程序人生</a></li>
+                <li class="rnav3"><a href="/web/" target="_blank">欣赏</a></li>
+                <li class="rnav4"><a href="/newshtml5/" target="_blank">短信祝福</a></li>
             </ul>
         </div>
         <div class="news">
             <h3>
-                <p>最新<span>模板</span></p>
+                <p>最新<span>文章</span></p>
             </h3>
             <ul class="rank">
                 <li><a href="/" title="Column 三栏布局 个人网站模板" target="_blank">Column 三栏布局 个人网站模板</a></li>
@@ -101,13 +91,11 @@
             </ul>
         </div>
         <!-- Baidu Button BEGIN -->
-        <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare"><a class="bds_tsina"></a><a
-                class="bds_qzone"></a><a class="bds_tqq"></a><a class="bds_renren"></a><span class="bds_more"></span><a
-                class="shareCount"></a></div>
-        <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6574585"></script>
+        <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare"><a class="bds_tsina"></a><a class="bds_qzone"></a><a class="bds_tqq"></a><a class="bds_renren"></a><span class="bds_more"></span><a class="shareCount"></a></div>
+        <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6574585" ></script>
         <script type="text/javascript" id="bdshell_js"></script>
         <script type="text/javascript">
-            document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() / 3600000)
+            document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
         </script>
         <!-- Baidu Button END -->
     </aside>
