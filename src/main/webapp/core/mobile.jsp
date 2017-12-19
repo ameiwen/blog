@@ -8,10 +8,11 @@
     </button>
     <nav>
         <ul>
-            <li><a href="${ctx}/index.jsp">Home</a></li>
-            <li><a href="${ctx}/page/article.jsp">Blog</a></li>
-            <li><a href="${ctx}/page/about.jsp">About</a></li>
-            <li><a href="${ctx}/page/contact.jsp">Contact</a></li>
+            <li><a href="${ctx}/index.jsp">首页</a></li>
+            <li><a href="${ctx}/page/article.jsp">文章</a></li>
+            <li><a href="${ctx}/page/contact.jsp">说说</a></li>
+            <li><a href="${ctx}/page/about.jsp">关于</a></li>
+            <li><a href="${ctx}/page/contact.jsp">留言</a></li>
         </ul>
     </nav>
 </div>

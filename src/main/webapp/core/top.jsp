@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-4 col-sm-5 col-xs-8">
                 <div class="logo">
-                    <h1><a href="${ctx}/index.jsp"><b>Black</b> &amp; White</a></h1>
+                    <h1><a href="${ctx}/index.jsp"><b>Yang</b>xs</a></h1>
                 </div>
             </div><!-- col-md-4 -->
             <div class="col-md-8 col-sm-7 col-xs-4">
@@ -18,10 +18,11 @@
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="cl-effect-11"><a href="${ctx}/index.jsp" data-hover="Home">Home</a></li>
-                            <li class="cl-effect-11"><a href="${ctx}/page/article.jsp" data-hover="Blog">Blog</a></li>
-                            <li class="cl-effect-11"><a href="${ctx}/page/about.jsp" data-hover="About">About</a></li>
-                            <li class="cl-effect-11"><a href="${ctx}/page/contact.jsp" data-hover="Contact">Contact</a></li>
+                            <li class="cl-effect-11"><a href="${ctx}/index.jsp" data-hover="______">首页</a></li>
+                            <li class="cl-effect-11"><a href="${ctx}/page/article.jsp" data-hover="______">文章</a></li>
+                            <li class="cl-effect-11"><a href="${ctx}/page/article.jsp" data-hover="______">说说</a></li>
+                            <li class="cl-effect-11"><a href="${ctx}/page/about.jsp" data-hover="______">关于</a></li>
+                            <li class="cl-effect-11"><a href="${ctx}/page/contact.jsp" data-hover="______">留言</a></li>
                         </ul>
                     </div>
                 </nav>

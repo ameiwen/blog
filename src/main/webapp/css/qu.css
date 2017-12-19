@@ -159,3 +159,7 @@
   border-radius: 4px;
 }
 .info-mod dt{font-size:14px;margin-bottom:10px}
+
+.exchange:hover{
+  background: #e7e7e7;
+}
