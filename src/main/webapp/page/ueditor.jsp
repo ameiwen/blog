@@ -13,7 +13,7 @@
         <p>这里我可以写一些输入提示</p>
 </script>
 </body>
-<script src="${ctx}/js/jquery-1.8.0.js"></script>
+<script src="${ctx}/js/jquery-3.2.1.js"></script>
 <script src="${ctx}/ueditor/ueditor.config.js"></script>
 <script src="${ctx}/ueditor/ueditor.all.js"></script>
 <script>

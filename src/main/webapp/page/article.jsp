@@ -87,7 +87,7 @@
                 <article class="post post-4">
                     <header class="entry-header">
                         <h1 class="entry-title">
-                            <a href="single.html">Adaptive Vs. Responsive Layouts And Optimal Text Readability</a>
+                                <a href="single.html">Adaptive Vs. Responsive Layouts And Optimal Text Readability</a>
                         </h1>
                         <div class="entry-meta">
                             <span class="post-category"><a href="#" rel="category tag">Web Design</a></span>
@@ -115,7 +115,7 @@
 <jsp:include page="../core/mobile.jsp"/>
 </body>
 <!-- js -->
-<script src="${ctx}/js/jquery-2.1.3.min.js"></script>
+<script src="${ctx}/js/jquery-3.2.1.js"></script>
 <script src="${ctx}/js/bootstrap.min.js"></script>
 <script src="${ctx}/js/pace.min.js"></script>
 <script src="${ctx}/js/modernizr.custom.js"></script>

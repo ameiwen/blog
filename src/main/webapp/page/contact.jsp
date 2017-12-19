@@ -40,7 +40,7 @@
 <jsp:include page="../core/mobile.jsp"/>
 </body>
 <!-- js -->
-<script src="${ctx}/js/jquery-2.1.3.min.js"></script>
+<script src="${ctx}/js/jquery-3.2.1.js"></script>
 <script src="${ctx}/js/bootstrap.min.js"></script>
 <script src="${ctx}/js/pace.min.js"></script>
 <script src="${ctx}/js/modernizr.custom.js"></script>
