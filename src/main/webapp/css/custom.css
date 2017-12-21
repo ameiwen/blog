@@ -443,7 +443,7 @@ figure {
 #header-search-box {
 	position: absolute;
 	right: 38px;
-	top: 8px;
+	top: 80px;
 }
 
 .search-form {
@@ -463,6 +463,9 @@ figure {
     position: relative;
 	border: 1px solid #ddd;
 	min-height: 42px;
+	right: 90px;
+	top: -41px;
+	width: 250px;
 }
 
 #searchform input[type=search] {
@@ -760,7 +763,7 @@ figure {
 @media (max-width: 767px) {
 	#header-search-box {
 		right: 20px;
-		top: 9px;
+		top: 80px;
 	}
 
 	.main-nav {

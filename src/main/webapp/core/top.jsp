@@ -20,21 +20,11 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li class="cl-effect-11"><a href="${ctx}/index.jsp" data-hover="______">首页</a></li>
                             <li class="cl-effect-11"><a href="${ctx}/page/article.jsp" data-hover="______">文章</a></li>
-                            <li class="cl-effect-11"><a href="${ctx}/page/article.jsp" data-hover="______">说说</a></li>
                             <li class="cl-effect-11"><a href="${ctx}/page/about.jsp" data-hover="______">关于</a></li>
                             <li class="cl-effect-11"><a href="${ctx}/page/contact.jsp" data-hover="______">留言</a></li>
                         </ul>
                     </div>
                 </nav>
-                <div id="header-search-box">
-                    <a id="search-menu" href="#"><span id="search-icon" class="ion-ios-search-strong"></span></a>
-                    <div id="search-form" class="search-form">
-                        <form role="search" method="get" id="searchform" action="#">
-                            <input type="search" placeholder="Search" required>
-                            <button type="submit"><span class="ion-ios-search-strong"></span></button>
-                        </form>
-                    </div>
-                </div>
             </div><!-- col-md-8 -->
         </div>
     </header>
