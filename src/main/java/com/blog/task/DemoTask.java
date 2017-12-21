@@ -13,13 +13,13 @@ public class DemoTask {
     private static final Logger logger = LogManager.getLogger(DemoTask.class);
 
     public void fistTask(){
-        logger.info("fistTask task start");
-        try {
-            logger.info("fistTask task process");
-        }catch (Exception e){
-            logger.error("fist task error",e);
-        }
-        logger.info("fistTask task end");
+//        logger.info("fistTask task start");
+//        try {
+//            logger.info("fistTask task process");
+//        }catch (Exception e){
+//            logger.error("fist task error",e);
+//        }
+//        logger.info("fistTask task end");
     }
 
 }
