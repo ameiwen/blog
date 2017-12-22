@@ -1,7 +1,7 @@
 package com.blog.controller;
 
 import com.blog.controller.base.BaseController;
-import com.blog.model.BitUser;
+import com.blog.model.User;
 import com.blog.service.BitUserService;
 import com.blog.utils.ResponseUtils;
 import com.blog.vo.ResponseWrapper;
@@ -21,7 +21,7 @@ public class UserController extends BaseController{
     @RequestMapping(value = "/getUser")
     public ResponseWrapper getUser(){
         ResponseWrapper responseWrapper = ResponseUtils.successResponse("");
-        BitUser user = userService.getUser(341L);
+        User user = userService.getUser(1);
         responseWrapper.addAttribute("user",user);
         return responseWrapper;
     }

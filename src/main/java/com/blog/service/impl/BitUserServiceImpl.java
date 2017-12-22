@@ -1,7 +1,7 @@
 package com.blog.service.impl;
 
-import com.blog.dao.BitUserDao;
-import com.blog.model.BitUser;
+import com.blog.dao.UserMapper;
+import com.blog.model.User;
 import com.blog.service.BitUserService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -14,12 +14,12 @@ public class BitUserServiceImpl implements BitUserService{
     private static final Logger logger = LogManager.getLogger(BitUserServiceImpl.class);
 
     @Autowired
-    private BitUserDao userDao;
+    private UserMapper userDao;
 
     @Override
-    public BitUser getUser(Long userid) {
+    public User getUser(Integer userid) {
         try {
-            return userDao.getUserById(userid);
+            return userDao.selectByPrimaryKey(userid);
         }catch (Exception e){
             logger.error("query error"+e);
         }

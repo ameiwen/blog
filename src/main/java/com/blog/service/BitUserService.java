@@ -1,8 +1,8 @@
 package com.blog.service;
 
-import com.blog.model.BitUser;
+import com.blog.model.User;
 
 public interface BitUserService {
 
-    BitUser getUser(Long userid);
+    User getUser(Integer userid);
 }

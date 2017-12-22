@@ -28,7 +28,7 @@
     <!-- 数据库配置文 -->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"  destroy-method="close">
         <property name="driverClass">
-            <value>oracle.jdbc.driver.OracleDriver</value>
+            <value>com.mysql.jdbc.Driver</value>
         </property>
         <property name="jdbcUrl" value="${jdbc.url}"/>
         <property name="user" value="${jdbc.user}"/>

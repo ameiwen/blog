@@ -2,7 +2,7 @@ package com.blog.interceptor;
 
 import com.blog.cache.RedisCache;
 import com.blog.common.Constants;
-import com.blog.model.BitUser;
+import com.blog.model.User;
 import com.blog.utils.AlgorithmUtil;
 import com.blog.utils.Misc;
 import org.apache.commons.lang3.exception.ExceptionUtils;
@@ -86,7 +86,7 @@ public class CookieInfo {
     /**
      * 添加登陆时的 cookie
      */
-    public static void addLoginCookie(BitUser customer, HttpServletRequest request, HttpServletResponse response) {
+    public static void addLoginCookie(User customer, HttpServletRequest request, HttpServletResponse response) {
 
         // 删除相关cookie
         Cookie[] cookies = request.getCookies();

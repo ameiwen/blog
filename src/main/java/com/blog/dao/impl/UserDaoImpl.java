@@ -1,21 +1,21 @@
 package com.blog.dao.impl;
 
-import com.blog.dao.BitUserDao;
-import com.blog.model.BitUser;
+import com.blog.dao.UserMapper;
+import com.blog.model.User;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class BitUserDaoImpl implements BitUserDao {
+public class UserDaoImpl implements UserMapper {
 
     @Autowired
     private SqlSessionTemplate sqlSessionTemplate;
 
     @Override
-    public BitUser getUserById(Long userid) {
+    public User selectByPrimaryKey(Integer userid) {
         try {
-            return sqlSessionTemplate.selectOne("selectBitUserById",userid);
+            return sqlSessionTemplate.selectOne("selectByPrimaryKey",userid);
         }catch (Exception e){
             e.printStackTrace();
         }

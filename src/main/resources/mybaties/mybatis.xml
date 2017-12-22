@@ -6,6 +6,6 @@
 		<setting name="logImpl" value="STDOUT_LOGGING" />
 	</settings>
 	<mappers>
-		<mapper resource="sql/mapper/BitUserMapper.xml"/>
+		<mapper resource="sql/mapper/UserMapper.xml"/>
 	</mappers>
 </configuration>
