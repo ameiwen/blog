@@ -37,12 +37,69 @@
 			targetProject="src/main/java" type="XMLMAPPER">
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
-        <table schema="" tableName="Bl_User" domainObjectName="User"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
+		<table schema="" tableName="bl_message" domainObjectName="Message"
+			   enableCountByExample="false" enableUpdateByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   selectByExampleQueryId="false">
 			<!-- 指定列的java数据类型 -->
-			<columnOverride column="CREATETIME" jdbcType="TIMESTAMP" />
+			<columnOverride column="create_time" jdbcType="TIMESTAMP" />
+		</table>
+		<table schema="" tableName="bl_comment" domainObjectName="comment"
+			   enableCountByExample="false" enableUpdateByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+			<!-- 指定列的java数据类型 -->
+			<columnOverride column="create_time" jdbcType="TIMESTAMP" />
+		</table>
+		<table schema="" tableName="bl_article" domainObjectName="Article"
+			   enableCountByExample="false" enableUpdateByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+			<!-- 指定列的java数据类型 -->
+			<columnOverride column="update_time" jdbcType="TIMESTAMP" />
+			<columnOverride column="create_time" jdbcType="TIMESTAMP" />
+		</table>
+		<table schema="" tableName="bl_moon_note" domainObjectName="MoonNote"
+			   enableCountByExample="false" enableUpdateByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+			<!-- 指定列的java数据类型 -->
+			<columnOverride column="create_time" jdbcType="TIMESTAMP" />
+		</table>
+		<table schema="" tableName="bl_tag" domainObjectName="Tag"
+			   enableCountByExample="false" enableUpdateByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+			<!-- 指定列的java数据类型 -->
+			<columnOverride column="create_time" jdbcType="TIMESTAMP" />
+		</table>
+		<table schema="" tableName="bl_introduce" domainObjectName="Introduce"
+			   enableCountByExample="false" enableUpdateByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+			<!-- 指定列的java数据类型 -->
+			<columnOverride column="create_time" jdbcType="TIMESTAMP" />
+		</table>
+		<table schema="" tableName="bl_process" domainObjectName="Process"
+			   enableCountByExample="false" enableUpdateByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+			<!-- 指定列的java数据类型 -->
+			<columnOverride column="create_time" jdbcType="TIMESTAMP" />
+		</table>
+		<table schema="" tableName="bl_safe_code" domainObjectName="SafeCode"
+			   enableCountByExample="false" enableUpdateByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+			<!-- 指定列的java数据类型 -->
+			<columnOverride column="create_time" jdbcType="TIMESTAMP" />
+		</table>
+		<table schema="" tableName="bl_code_task" domainObjectName="CodeTask"
+			   enableCountByExample="false" enableUpdateByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+			<!-- 指定列的java数据类型 -->
+			<columnOverride column="create_time" jdbcType="TIMESTAMP" />
 		</table>
 
 	</context>

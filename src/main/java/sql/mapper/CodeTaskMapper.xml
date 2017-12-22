@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.blog.dao.CodeTaskDao" >
+  <resultMap id="BaseResultMap" type="com.blog.model.CodeTask" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="msg" property="msg" jdbcType="VARCHAR" />
+    <result column="email" property="email" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="CHAR" />
+    <result column="function_name" property="functionName" jdbcType="VARCHAR" />
+    <result column="send_time" property="sendTime" jdbcType="TIMESTAMP" />
+    <result column="msg_id" property="msgId" jdbcType="VARCHAR" />
+    <result column="user_id" property="userId" jdbcType="DECIMAL" />
+    <result column="result" property="result" jdbcType="VARCHAR" />
+    <result column="type" property="type" jdbcType="VARCHAR" />
+    <result column="way" property="way" jdbcType="DECIMAL" />
+    <result column="ip" property="ip" jdbcType="VARCHAR" />
+    <result column="deleted" property="deleted" jdbcType="CHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, msg, email, status, function_name, send_time, msg_id, user_id, result, type, 
+    way, ip, deleted, create_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from bl_code_task
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from bl_code_task
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.blog.model.CodeTask" >
+    insert into bl_code_task (id, msg, email, 
+      status, function_name, send_time, 
+      msg_id, user_id, result, 
+      type, way, ip, deleted, 
+      create_time)
+    values (#{id,jdbcType=INTEGER}, #{msg,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, 
+      #{status,jdbcType=CHAR}, #{functionName,jdbcType=VARCHAR}, #{sendTime,jdbcType=TIMESTAMP}, 
+      #{msgId,jdbcType=VARCHAR}, #{userId,jdbcType=DECIMAL}, #{result,jdbcType=VARCHAR}, 
+      #{type,jdbcType=VARCHAR}, #{way,jdbcType=DECIMAL}, #{ip,jdbcType=VARCHAR}, #{deleted,jdbcType=CHAR}, 
+      #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.blog.model.CodeTask" >
+    insert into bl_code_task
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="msg != null" >
+        msg,
+      </if>
+      <if test="email != null" >
+        email,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="functionName != null" >
+        function_name,
+      </if>
+      <if test="sendTime != null" >
+        send_time,
+      </if>
+      <if test="msgId != null" >
+        msg_id,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="result != null" >
+        result,
+      </if>
+      <if test="type != null" >
+        type,
+      </if>
+      <if test="way != null" >
+        way,
+      </if>
+      <if test="ip != null" >
+        ip,
+      </if>
+      <if test="deleted != null" >
+        deleted,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="msg != null" >
+        #{msg,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null" >
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=CHAR},
+      </if>
+      <if test="functionName != null" >
+        #{functionName,jdbcType=VARCHAR},
+      </if>
+      <if test="sendTime != null" >
+        #{sendTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="msgId != null" >
+        #{msgId,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=DECIMAL},
+      </if>
+      <if test="result != null" >
+        #{result,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="way != null" >
+        #{way,jdbcType=DECIMAL},
+      </if>
+      <if test="ip != null" >
+        #{ip,jdbcType=VARCHAR},
+      </if>
+      <if test="deleted != null" >
+        #{deleted,jdbcType=CHAR},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.blog.model.CodeTask" >
+    update bl_code_task
+    <set >
+      <if test="msg != null" >
+        msg = #{msg,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null" >
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=CHAR},
+      </if>
+      <if test="functionName != null" >
+        function_name = #{functionName,jdbcType=VARCHAR},
+      </if>
+      <if test="sendTime != null" >
+        send_time = #{sendTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="msgId != null" >
+        msg_id = #{msgId,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=DECIMAL},
+      </if>
+      <if test="result != null" >
+        result = #{result,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        type = #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="way != null" >
+        way = #{way,jdbcType=DECIMAL},
+      </if>
+      <if test="ip != null" >
+        ip = #{ip,jdbcType=VARCHAR},
+      </if>
+      <if test="deleted != null" >
+        deleted = #{deleted,jdbcType=CHAR},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.blog.model.CodeTask" >
+    update bl_code_task
+    set msg = #{msg,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      status = #{status,jdbcType=CHAR},
+      function_name = #{functionName,jdbcType=VARCHAR},
+      send_time = #{sendTime,jdbcType=TIMESTAMP},
+      msg_id = #{msgId,jdbcType=VARCHAR},
+      user_id = #{userId,jdbcType=DECIMAL},
+      result = #{result,jdbcType=VARCHAR},
+      type = #{type,jdbcType=VARCHAR},
+      way = #{way,jdbcType=DECIMAL},
+      ip = #{ip,jdbcType=VARCHAR},
+      deleted = #{deleted,jdbcType=CHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
