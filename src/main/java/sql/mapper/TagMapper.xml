@@ -20,12 +20,6 @@
     delete from bl_tag
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.blog.model.Tag" >
-    insert into bl_tag (id, tag_name, deleted, 
-      create_time)
-    values (#{id,jdbcType=INTEGER}, #{tagName,jdbcType=VARCHAR}, #{deleted,jdbcType=CHAR}, 
-      #{createTime,jdbcType=TIMESTAMP})
-  </insert>
   <insert id="insertSelective" parameterType="com.blog.model.Tag" >
     insert into bl_tag
     <trim prefix="(" suffix=")" suffixOverrides="," >
@@ -72,11 +66,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.blog.model.Tag" >
-    update bl_tag
-    set tag_name = #{tagName,jdbcType=VARCHAR},
-      deleted = #{deleted,jdbcType=CHAR},
-      create_time = #{createTime,jdbcType=TIMESTAMP}
-    where id = #{id,jdbcType=INTEGER}
-  </update>
+  <select id="selectTagList" resultMap="BaseResultMap" parameterType="java.util.Map">
+    select * from bl_tag where deleted='0';
+  </select>
 </mapper>

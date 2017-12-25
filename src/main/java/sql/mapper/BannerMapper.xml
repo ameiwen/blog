@@ -21,12 +21,6 @@
     delete from bl_banner
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.blog.model.Banner" >
-    insert into bl_banner (id, img_url, title, 
-      deleted, create_time)
-    values (#{id,jdbcType=INTEGER}, #{imgUrl,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR}, 
-      #{deleted,jdbcType=CHAR}, #{createTime,jdbcType=TIMESTAMP})
-  </insert>
   <insert id="insertSelective" parameterType="com.blog.model.Banner" >
     insert into bl_banner
     <trim prefix="(" suffix=")" suffixOverrides="," >
@@ -82,12 +76,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.blog.model.Banner" >
-    update bl_banner
-    set img_url = #{imgUrl,jdbcType=VARCHAR},
-      title = #{title,jdbcType=VARCHAR},
-      deleted = #{deleted,jdbcType=CHAR},
-      create_time = #{createTime,jdbcType=TIMESTAMP}
-    where id = #{id,jdbcType=INTEGER}
-  </update>
+  <select id="selectBannerList" resultMap="BaseResultMap" parameterType="java.util.Map">
+    select * from bl_banner where deleted = '0' order by create_time desc
+  </select>
 </mapper>

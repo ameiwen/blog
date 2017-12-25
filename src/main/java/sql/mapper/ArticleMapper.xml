@@ -8,11 +8,13 @@
     <result column="tag" property="tag" jdbcType="CHAR" />
     <result column="picture" property="picture" jdbcType="VARCHAR" />
     <result column="author" property="author" jdbcType="VARCHAR" />
-    <result column="sortid" property="sortid" jdbcType="DECIMAL" />
-    <result column="istop" property="istop" jdbcType="CHAR" />
+    <result column="sort_id" property="sortId" jdbcType="DECIMAL" />
+    <result column="is_top" property="isTop" jdbcType="CHAR" />
+    <result column="is_recommend" property="isRecommend" jdbcType="CHAR" />
     <result column="watch" property="watch" jdbcType="DECIMAL" />
     <result column="comment" property="comment" jdbcType="DECIMAL" />
     <result column="good" property="good" jdbcType="DECIMAL" />
+    <result column="file_date" property="fileDate" jdbcType="VARCHAR"/>
     <result column="deleted" property="deleted" jdbcType="CHAR" />
     <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
     <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
@@ -21,7 +23,7 @@
     <result column="content" property="content" jdbcType="LONGVARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
-    id, title, synopsis, tag, picture, author, sortid, istop, watch, comment, good, deleted, 
+    id, title, synopsis, tag, picture, author, sort_id, is_top, is_recommend , watch, comment, good,file_date, deleted,
     update_time, create_time
   </sql>
   <sql id="Blob_Column_List" >
@@ -39,20 +41,6 @@
     delete from bl_article
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.blog.model.Article" >
-    insert into bl_article (id, title, synopsis, 
-      tag, picture, author, 
-      sortid, istop, watch, 
-      comment, good, deleted, 
-      update_time, create_time, content
-      )
-    values (#{id,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, #{synopsis,jdbcType=VARCHAR}, 
-      #{tag,jdbcType=CHAR}, #{picture,jdbcType=VARCHAR}, #{author,jdbcType=VARCHAR}, 
-      #{sortid,jdbcType=DECIMAL}, #{istop,jdbcType=CHAR}, #{watch,jdbcType=DECIMAL}, 
-      #{comment,jdbcType=DECIMAL}, #{good,jdbcType=DECIMAL}, #{deleted,jdbcType=CHAR}, 
-      #{updateTime,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP}, #{content,jdbcType=LONGVARCHAR}
-      )
-  </insert>
   <insert id="insertSelective" parameterType="com.blog.model.Article" >
     insert into bl_article
     <trim prefix="(" suffix=")" suffixOverrides="," >
@@ -198,39 +186,14 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.blog.model.Article" >
-    update bl_article
-    set title = #{title,jdbcType=VARCHAR},
-      synopsis = #{synopsis,jdbcType=VARCHAR},
-      tag = #{tag,jdbcType=CHAR},
-      picture = #{picture,jdbcType=VARCHAR},
-      author = #{author,jdbcType=VARCHAR},
-      sortid = #{sortid,jdbcType=DECIMAL},
-      istop = #{istop,jdbcType=CHAR},
-      watch = #{watch,jdbcType=DECIMAL},
-      comment = #{comment,jdbcType=DECIMAL},
-      good = #{good,jdbcType=DECIMAL},
-      deleted = #{deleted,jdbcType=CHAR},
-      update_time = #{updateTime,jdbcType=TIMESTAMP},
-      create_time = #{createTime,jdbcType=TIMESTAMP},
-      content = #{content,jdbcType=LONGVARCHAR}
-    where id = #{id,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.blog.model.Article" >
-    update bl_article
-    set title = #{title,jdbcType=VARCHAR},
-      synopsis = #{synopsis,jdbcType=VARCHAR},
-      tag = #{tag,jdbcType=CHAR},
-      picture = #{picture,jdbcType=VARCHAR},
-      author = #{author,jdbcType=VARCHAR},
-      sortid = #{sortid,jdbcType=DECIMAL},
-      istop = #{istop,jdbcType=CHAR},
-      watch = #{watch,jdbcType=DECIMAL},
-      comment = #{comment,jdbcType=DECIMAL},
-      good = #{good,jdbcType=DECIMAL},
-      deleted = #{deleted,jdbcType=CHAR},
-      update_time = #{updateTime,jdbcType=TIMESTAMP},
-      create_time = #{createTime,jdbcType=TIMESTAMP}
-    where id = #{id,jdbcType=INTEGER}
-  </update>
+  <select id="selectLatelyArticle" parameterType="java.util.Map" resultMap="BaseResultMap">
+    select * from bl_article where deleted='0' order by sortid asc limit ${startIndex},${endIndex}
+  </select>
+  <select id="selectRecommendArticle" parameterType="java.util.Map" resultMap="BaseResultMap">
+    select * from bl_article where deleted='0' and is_recommend=#{isRecommend,jdbcType=CHAR} order by create_time desc
+     limit ${startIndex},${endIndex}
+  </select>
+  <select id="selectFileDate" parameterType="java.util.Map" resultMap="BaseResultMap">
+    select distinct(file_date) from bl_article where deleted='0' order by create_time desc
+  </select>
 </mapper>

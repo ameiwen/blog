@@ -15,15 +15,19 @@ public class Article {
 
     private String author;
 
-    private Long sortid;
+    private Long sortId;
 
-    private String istop;
+    private String isTop;
+
+    private String isRecommend;
 
     private Long watch;
 
     private Long comment;
 
     private Long good;
+
+    private String fileDate;
 
     private String deleted;
 
@@ -32,6 +36,8 @@ public class Article {
     private Date createTime;
 
     private String content;
+
+    private String time;
 
     public Integer getId() {
         return id;
@@ -81,20 +87,28 @@ public class Article {
         this.author = author == null ? null : author.trim();
     }
 
-    public Long getSortid() {
-        return sortid;
+    public Long getSortId() {
+        return sortId;
     }
 
-    public void setSortid(Long sortid) {
-        this.sortid = sortid;
+    public void setSortId(Long sortId) {
+        this.sortId = sortId;
     }
 
-    public String getIstop() {
-        return istop;
+    public String getIsTop() {
+        return isTop;
     }
 
-    public void setIstop(String istop) {
-        this.istop = istop == null ? null : istop.trim();
+    public void setIsTop(String isTop) {
+        this.isTop = isTop;
+    }
+
+    public String getIsRecommend() {
+        return isRecommend;
+    }
+
+    public void setIsRecommend(String isRecommend) {
+        this.isRecommend = isRecommend;
     }
 
     public Long getWatch() {
@@ -119,6 +133,14 @@ public class Article {
 
     public void setGood(Long good) {
         this.good = good;
+    }
+
+    public String getFileDate() {
+        return fileDate;
+    }
+
+    public void setFileDate(String fileDate) {
+        this.fileDate = fileDate;
     }
 
     public String getDeleted() {
@@ -151,5 +173,13 @@ public class Article {
 
     public void setContent(String content) {
         this.content = content == null ? null : content.trim();
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
     }
 }
