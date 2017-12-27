@@ -1,0 +1,168 @@
+2017-12-27 15:31:37:676 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | Environment: jdk.version    => 1.8.0_31
+2017-12-27 15:31:37:691 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | Environment: user.dir       => E:\idea\blog
+2017-12-27 15:31:37:691 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | Environment: java.io.tmpdir => C:\Users\MR-002\AppData\Local\Temp\
+2017-12-27 15:31:37:691 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | Environment: user.timezone  => Asia/Shanghai
+2017-12-27 15:31:37:691 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | Environment: file.encoding  => UTF-8
+2017-12-27 15:31:37:691 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | Environment: classpath      => E:\idea\blog\target\classes
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/categories.html
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/feed.xml
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/atom.xml
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/page/new
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/tags
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/article
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/feed
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/index
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/page/publish
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/attach/upload
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/article/publish
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/category/:keyword/:page.html
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/comments/delete
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/template/content
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/article/publish
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/template/save
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/category/save
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/profile
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/attach
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/page/:page
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/profile
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/comments
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/categories
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/advanced
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/search.html
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/login
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/themes/setting
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/install
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/themes
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/article/:cid.html
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/page/modify
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/tags.html
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/page
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => ALL	/admin/attach/delete
+2017-12-27 15:31:37:942 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/sitemap
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/search
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/template
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/password
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/sitemap.xml
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/page/:cid
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/:cid.html
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/category
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/category/:keyword/:page
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/search/:keyword/:page
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => ALL	/admin/page/delete
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/tag/:name/:page
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => ALL	/logout
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => ALL	/admin/article/delete
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/tag/:name.html
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/page/:page.html
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/comments
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/search/:keyword.html
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/setting
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/search/:keyword/:page.html
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/archives.html
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/comment
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/archives
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/tag/:name
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/category/:keyword.html
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/article/:cid
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/article/:cid
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/install
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/login
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/themes/setting
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => ALL	/admin/category/delete
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/comments/status
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/setting
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/:cid
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/article/modify
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/reload
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/themes/active
+2017-12-27 15:31:37:957 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/tag/:name/:page.html
+2017-12-27 15:31:37:973 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/category/:keyword
+2017-12-27 15:31:37:973 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/backup
+2017-12-27 15:31:37:973 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/search/:keyword
+2017-12-27 15:31:37:973 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add hook  => [BEFORE	/.*]
+2017-12-27 15:31:37:973 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add hook  => [AFTER	/.*]
+2017-12-27 15:31:37:973 INFO - [ _(:3」∠)_ ] c.b.i.SqliteJdbc          | blade dev mode: true
+2017-12-27 15:31:37:973 INFO - [ _(:3」∠)_ ] c.b.i.SqliteJdbc          | load mysql database path [127.0.0.1:3306/blog?useSSL=true&useUnicode=true&characterEncoding=UTF8]
+2017-12-27 15:31:37:973 INFO - [ _(:3」∠)_ ] c.b.i.SqliteJdbc          | load mysql database src [jdbc:mysql://127.0.0.1:3306/blog?useSSL=true&useUnicode=true&characterEncoding=UTF8]
+2017-12-27 15:31:38:301 INFO - [ _(:3」∠)_ ] c.b.i.SqliteJdbc          | database path is: 127.0.0.1:3306/blog?useSSL=true&useUnicode=true&characterEncoding=UTF8
+2017-12-27 15:31:38:301 INFO - [ _(:3」∠)_ ] c.b.j.Base                | ⬢ Blade-JDBC initializing
+2017-12-27 15:31:38:317 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | ⬢ Register bean: [com.blog.controller.IndexController@39e666c7, com.blog.controller.admin.AttachController@17e7d98d, com.blog.controller.admin.TemplateController@b8a47ff, com.blade.Environment@4036150c, com.blog.init.WebContext@4a6c9393, com.blog.controller.admin.PageController@63ee10e2, com.blog.controller.CategoryController@3a8216df, com.blog.service.MetasService@4aeceaf6, com.blog.service.OptionsService@64b21833, com.blog.hooks.BaseWebHook@77c86d47, com.blog.exception.GolbalExceptionHandler@5d56a98f, com.blog.controller.InstallController@70c04389, com.blog.controller.admin.ThemeController@4c7be22, com.blog.service.SiteService@30d149a8, com.blog.controller.admin.CommentController@582394ec, com.blog.service.CommentsService@2a8d486a, com.blog.controller.admin.IndexController@1382d5b7, com.blog.controller.admin.ArticleController@29244266, com.blog.service.ContentsService@6de4375a, com.blog.controller.admin.AuthController@2d6aec94, com.blog.hooks.BaseWebHook@77c86d47, com.blog.init.WebContext@4a6c9393, com.blog.controller.admin.CategoryController@2840abe3]
+2017-12-27 15:31:38:410 INFO - [ _(:3」∠)_ ] j.t.JetEngineImpl         | JetEngine.version = 2.1.5
+2017-12-27 15:31:38:410 INFO - [ _(:3」∠)_ ] j.t.JetEngineImpl         | JetEngine.loader = jetbrick.template.loader.ClasspathResourceLoader, root = /templates/, reload = true
+2017-12-27 15:31:38:438 INFO - [ _(:3」∠)_ ] j.t.r.c.ClassResolver     | import package: java.lang.*
+2017-12-27 15:31:38:439 INFO - [ _(:3」∠)_ ] j.t.r.c.ClassResolver     | import package: java.util.*
+2017-12-27 15:31:38:441 INFO - [ _(:3」∠)_ ] j.t.r.m.MethodInvokerResolver | import 38 methods from class jetbrick.template.runtime.buildin.JetMethods
+2017-12-27 15:31:38:443 INFO - [ _(:3」∠)_ ] j.t.r.f.FunctionInvokerResolver | import 11 functions from class jetbrick.template.runtime.buildin.JetFunctions
+2017-12-27 15:31:38:445 INFO - [ _(:3」∠)_ ] j.t.r.t.TagInvokerResolver | import 2 tags from class jetbrick.template.runtime.buildin.JetTags
+2017-12-27 15:31:38:477 INFO - [ _(:3」∠)_ ] j.t.r.GlobalResolver      | Scanning @JetMethods, @JetFunctions, @JetTags implements from [com.blog] ...
+2017-12-27 15:31:38:525 INFO - [ _(:3」∠)_ ] j.t.r.GlobalResolver      | Found 0 annotated classes, time elapsed 48 ms.
+2017-12-27 15:31:38:556 INFO - [ _(:3」∠)_ ] j.t.JetTemplateImpl       | Loading template: /comm/macros.html
+2017-12-27 15:31:38:806 INFO - [ _(:3」∠)_ ] j.t.r.f.FunctionInvokerResolver | import 21 functions from class com.blog.extension.Commons
+2017-12-27 15:31:38:806 INFO - [ _(:3」∠)_ ] j.t.r.f.FunctionInvokerResolver | import 50 functions from class com.blog.extension.Theme
+2017-12-27 15:31:38:806 INFO - [ _(:3」∠)_ ] j.t.r.f.FunctionInvokerResolver | import 2 functions from class com.blog.extension.AdminCommons
+2017-12-27 15:31:38:806 INFO - [ _(:3」∠)_ ] j.t.r.t.TagInvokerResolver | import 1 tags from class com.blog.extension.JetTag
+2017-12-27 15:31:38:822 DEBUG - [ _(:3」∠)_ ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_options
+2017-12-27 15:31:38:822 DEBUG - [ _(:3」∠)_ ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-27 15:31:38:994 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | ⬢ Use NioEventLoopGroup
+2017-12-27 15:31:39:400 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | ⬢ Blog initialize successfully, Time elapsed: 1724 ms
+2017-12-27 15:31:39:400 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | ⬢ Blade start with 0.0.0.0:9000
+2017-12-27 15:31:39:400 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | ⬢ Open your web browser and navigate to http://127.0.0.1:9000 ⚡
+2017-12-27 15:32:03:491 INFO - [ worker@pool thread-6 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/
+2017-12-27 15:32:03:528 INFO - [ worker@pool thread-6 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-27 15:32:03:528 INFO - [ worker@pool thread-6 ] c.b.h.BaseWebHook         | 用户访问地址: /, 来路地址: 127.0.0.1:9000
+2017-12-27 15:32:03:538 INFO - [ worker@pool thread-6 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/install
+2017-12-27 15:32:03:540 INFO - [ worker@pool thread-6 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-27 15:32:03:541 INFO - [ worker@pool thread-6 ] c.b.h.BaseWebHook         | 用户访问地址: /install, 来路地址: 127.0.0.1:9000
+2017-12-27 15:32:03:593 INFO - [ worker@pool thread-6 ] j.t.JetTemplateImpl       | Loading template: install.html
+2017-12-27 15:32:03:643 INFO - [ worker@pool thread-3 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/css/style.min.css
+2017-12-27 15:32:03:643 INFO - [ worker@pool thread-2 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/plugins/jquery/3.2.1/jquery.min.js
+2017-12-27 15:32:03:643 INFO - [ worker@pool thread-6 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/plugins/jquery-steps/1.1.0/jquery.steps.css
+2017-12-27 15:32:03:643 INFO - [ worker@pool thread-1 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/plugins/bootstrap/3.3.7/js/bootstrap.min.js
+2017-12-27 15:32:03:643 INFO - [ worker@pool thread-5 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/plugins/bootstrap/3.3.7/css/bootstrap.min.css
+2017-12-27 15:32:03:643 INFO - [ worker@pool thread-4 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/plugins/limonte-sweetalert2/6.4.1/sweetalert2.min.css
+2017-12-27 15:32:03:658 INFO - [ worker@pool thread-4 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/plugins/limonte-sweetalert2/6.4.1/sweetalert2.min.js
+2017-12-27 15:32:03:658 INFO - [ worker@pool thread-6 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/plugins/jquery-validate/1.15.1/jquery.validate.min.js
+2017-12-27 15:32:03:660 INFO - [ worker@pool thread-5 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/js/base.js
+2017-12-27 15:32:03:661 INFO - [ worker@pool thread-2 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/plugins/jquery-validate/1.15.1/localization/messages_zh.min.js
+2017-12-27 15:32:03:662 INFO - [ worker@pool thread-1 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/plugins/jquery-steps/1.1.0/jquery.steps.min.js
+2017-12-27 15:32:03:673 INFO - [ worker@pool thread-4 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/js/install.js
+2017-12-27 15:32:03:688 INFO - [ worker@pool thread-4 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/images/bg/1.png
+2017-12-27 15:32:06:523 INFO - [ worker@pool thread-4 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/install
+2017-12-27 15:32:06:523 INFO - [ worker@pool thread-4 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-27 15:32:06:524 INFO - [ worker@pool thread-4 ] c.b.h.BaseWebHook         | 用户访问地址: /install, 来路地址: 127.0.0.1:9000
+2017-12-27 15:32:06:577 INFO - [ worker@pool thread-4 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/images/bg/5.png
+2017-12-27 15:32:06:596 INFO - [ worker@pool thread-4 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/images/favicon.png
+2017-12-27 15:32:07:403 INFO - [ worker@pool thread-4 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/install
+2017-12-27 15:32:07:403 INFO - [ worker@pool thread-4 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-27 15:32:07:403 INFO - [ worker@pool thread-4 ] c.b.h.BaseWebHook         | 用户访问地址: /install, 来路地址: 127.0.0.1:9000
+2017-12-27 15:32:07:445 INFO - [ worker@pool thread-4 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/images/favicon.png
+2017-12-27 15:32:07:962 INFO - [ worker@pool thread-4 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/install
+2017-12-27 15:32:07:962 INFO - [ worker@pool thread-4 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-27 15:32:07:962 INFO - [ worker@pool thread-4 ] c.b.h.BaseWebHook         | 用户访问地址: /install, 来路地址: 127.0.0.1:9000
+2017-12-27 15:32:07:992 INFO - [ worker@pool thread-4 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/images/bg/3.png
+2017-12-27 15:32:08:006 INFO - [ worker@pool thread-4 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/images/favicon.png
+2017-12-27 15:32:08:331 INFO - [ worker@pool thread-4 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/install
+2017-12-27 15:32:08:331 INFO - [ worker@pool thread-4 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-27 15:32:08:331 INFO - [ worker@pool thread-4 ] c.b.h.BaseWebHook         | 用户访问地址: /install, 来路地址: 127.0.0.1:9000
+2017-12-27 15:32:08:351 INFO - [ worker@pool thread-4 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/images/bg/4.png
+2017-12-27 15:32:08:383 INFO - [ worker@pool thread-4 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/images/favicon.png
+2017-12-27 15:32:08:642 INFO - [ worker@pool thread-4 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/install
+2017-12-27 15:32:08:642 INFO - [ worker@pool thread-4 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-27 15:32:08:642 INFO - [ worker@pool thread-4 ] c.b.h.BaseWebHook         | 用户访问地址: /install, 来路地址: 127.0.0.1:9000
+2017-12-27 15:32:08:685 INFO - [ worker@pool thread-4 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/images/favicon.png
+2017-12-27 15:32:08:811 INFO - [ worker@pool thread-4 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/install
+2017-12-27 15:32:08:811 INFO - [ worker@pool thread-4 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-27 15:32:08:811 INFO - [ worker@pool thread-4 ] c.b.h.BaseWebHook         | 用户访问地址: /install, 来路地址: 127.0.0.1:9000
+2017-12-27 15:32:08:841 INFO - [ worker@pool thread-4 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/images/bg/2.png
+2017-12-27 15:32:08:854 INFO - [ worker@pool thread-4 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/images/favicon.png
+2017-12-27 15:32:08:970 INFO - [ worker@pool thread-4 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/install
+2017-12-27 15:32:08:970 INFO - [ worker@pool thread-4 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-27 15:32:08:970 INFO - [ worker@pool thread-4 ] c.b.h.BaseWebHook         | 用户访问地址: /install, 来路地址: 127.0.0.1:9000
+2017-12-27 15:32:09:018 INFO - [ worker@pool thread-4 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/images/favicon.png
+2017-12-27 15:32:09:299 INFO - [ worker@pool thread-4 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/install
+2017-12-27 15:32:09:299 INFO - [ worker@pool thread-4 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-27 15:32:09:299 INFO - [ worker@pool thread-4 ] c.b.h.BaseWebHook         | 用户访问地址: /install, 来路地址: 127.0.0.1:9000
+2017-12-27 15:32:09:345 INFO - [ worker@pool thread-4 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/images/favicon.png
+2017-12-27 15:32:18:115 INFO - [ worker@pool thread-4 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/images/loading.gif

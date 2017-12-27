@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.bladejava:blade-mvc:2.0.5-BETA1">
+    <CLASSES>
+      <root url="jar://E:/mave_respos/repos/com/bladejava/blade-mvc/2.0.5-BETA1/blade-mvc-2.0.5-BETA1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/mave_respos/repos/com/bladejava/blade-mvc/2.0.5-BETA1/blade-mvc-2.0.5-BETA1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://E:/mave_respos/repos/com/bladejava/blade-mvc/2.0.5-BETA1/blade-mvc-2.0.5-BETA1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
