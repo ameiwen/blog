@@ -26,7 +26,7 @@ public final class SqliteJdbc {
     public static String DB_SRC;
     public static String LOCALE_PORT="127.0.0.1:3306/";
     public static String USER = "root";
-    public static String PASSWORD = "123456";
+    public static String PASSWORD = "yanghongbo";
     public static String DB_CONFIG = "useSSL=true&useUnicode=true&characterEncoding=UTF8";
     public static String TEST_URL;
 

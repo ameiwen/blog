@@ -1,21 +1,17 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : blog
+Source Server         : own
 Source Server Version : 50716
-Source Host           : localhost:3306
+Source Host           : 127.0.0.1:3306
 Source Database       : blog
 
 Target Server Type    : MYSQL
 Target Server Version : 50716
 File Encoding         : 65001
 
-Date: 2017-12-27 10:39:30
+Date: 2017-12-27 22:15:40
 */
-
-CREATE DATABASE /*!32312 IF NOT EXISTS*/`blog` /*!40100 DEFAULT CHARACTER SET utf8 */;
-
-USE `blog`;
 
 SET FOREIGN_KEY_CHECKS=0;
 
@@ -69,11 +65,11 @@ CREATE TABLE `bl_code_task` (
 DROP TABLE IF EXISTS `bl_comments`;
 CREATE TABLE `bl_comments` (
   `coid` int(11) NOT NULL AUTO_INCREMENT,
-  `cid` int(11) DEFAULT NULL,
+  `cid` int(11) DEFAULT '0',
   `created` int(11) DEFAULT NULL,
   `author` varchar(200) DEFAULT NULL,
-  `author_id` int(11) DEFAULT NULL,
-  `owner_id` int(11) DEFAULT NULL,
+  `author_id` int(11) DEFAULT '0',
+  `owner_id` int(11) DEFAULT '0',
   `mail` varchar(200) DEFAULT NULL,
   `url` varchar(200) DEFAULT NULL,
   `ip` varchar(100) DEFAULT NULL,
@@ -81,7 +77,7 @@ CREATE TABLE `bl_comments` (
   `content` longtext,
   `type` varchar(50) DEFAULT NULL,
   `status` varchar(50) DEFAULT NULL,
-  `parent` int(11) DEFAULT NULL,
+  `parent` int(11) DEFAULT '0',
   PRIMARY KEY (`coid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -104,11 +100,11 @@ CREATE TABLE `bl_contents` (
   `author_id` int(11) DEFAULT NULL,
   `type` varchar(50) DEFAULT NULL,
   `status` varchar(50) DEFAULT NULL,
-  `fmt_type` varchar(50) DEFAULT NULL,
+  `fmt_type` varchar(50) DEFAULT 'markdown',
   `tags` varchar(200) DEFAULT NULL,
   `categories` varchar(200) DEFAULT NULL,
-  `hits` int(11) DEFAULT NULL,
-  `comments_num` int(11) DEFAULT NULL,
+  `hits` int(11) DEFAULT '0',
+  `comments_num` int(11) DEFAULT '0',
   `allow_comment` int(11) DEFAULT NULL,
   `allow_ping` int(11) DEFAULT NULL,
   `allow_feed` int(11) DEFAULT NULL,
@@ -123,24 +119,6 @@ INSERT INTO `bl_contents` VALUES ('2', '网站开通成功了奥！', null, null
 INSERT INTO `bl_contents` VALUES ('3', '友情链接', 'links', null, '1505643727', '1505643888', '## 友情链接\r\n\r\n- :lock: [java技术论坛]()\r\n\r\n## 链接须知\r\n\r\n> 请确定贵站可以稳定运营\r\n> 原创博客优先，技术类博客优先，设计、视觉类博客优先\r\n> 经常过来访问和评论，眼熟的\r\n\r\n备注：默认申请友情链接均为内页（当前页面）\r\n\r\n## 基本信息\r\n\r\n                网站名称：yangxs博客\r\n                网站地址：暂时没有\r\n\r\n请在当页通过评论来申请友链，其他地方不予回复\r\n\r\n暂时先这样，同时欢迎互换友链，这个页面留言即可。 ^_^\r\n\r\n还有，我会不定时对无法访问的网址进行清理，请保证自己的链接长期有效。', '1', 'page', 'publish', 'markdown', null, null, '60', '0', '1', '1', null);
 
 -- ----------------------------
--- Table structure for bl_log
--- ----------------------------
-DROP TABLE IF EXISTS `bl_log`;
-CREATE TABLE `bl_log` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `action` varchar(100) DEFAULT NULL,
-  `data` varchar(2000) DEFAULT NULL,
-  `author_id` int(11) DEFAULT NULL,
-  `ip` varchar(20) DEFAULT NULL,
-  `created` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of bl_log
--- ----------------------------
-
--- ----------------------------
 -- Table structure for bl_logs
 -- ----------------------------
 DROP TABLE IF EXISTS `bl_logs`;
@@ -152,13 +130,7 @@ CREATE TABLE `bl_logs` (
   `ip` varchar(20) DEFAULT NULL,
   `created` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of bl_logs
--- ----------------------------
-INSERT INTO `bl_logs` VALUES ('1', '初始化站点', null, '4', '', '1514345654');
-INSERT INTO `bl_logs` VALUES ('2', '初始化站点', null, '1', '', '1514345934');
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for bl_metas
@@ -170,8 +142,8 @@ CREATE TABLE `bl_metas` (
   `slug` varchar(200) DEFAULT NULL,
   `type` varchar(32) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
-  `sort` int(11) DEFAULT NULL,
-  `parent` int(11) DEFAULT NULL,
+  `sort` int(11) DEFAULT '0',
+  `parent` int(11) DEFAULT '0',
   PRIMARY KEY (`mid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
@@ -179,7 +151,7 @@ CREATE TABLE `bl_metas` (
 -- Records of bl_metas
 -- ----------------------------
 INSERT INTO `bl_metas` VALUES ('1', '笔记', null, 'category', null, '0', '0');
-INSERT INTO `bl_metas` VALUES ('2', '我喜欢的歌曲', null, 'music', null, '1', '0');
+INSERT INTO `bl_metas` VALUES ('2', '我喜欢的歌曲', null, 'category', null, '1', '0');
 
 -- ----------------------------
 -- Table structure for bl_options
@@ -199,8 +171,6 @@ INSERT INTO `bl_options` VALUES ('allow_install', '0', '是否允许重新安装
 INSERT INTO `bl_options` VALUES ('site_description', '博客系统,Blade框架', null);
 INSERT INTO `bl_options` VALUES ('site_keywords', '博客系统,Blade框架', null);
 INSERT INTO `bl_options` VALUES ('site_theme', 'default', null);
-INSERT INTO `bl_options` VALUES ('site_title', 'yangxs', '');
-INSERT INTO `bl_options` VALUES ('site_url', 'http://127.0.0.1:9000', null);
 INSERT INTO `bl_options` VALUES ('social_github', '', null);
 INSERT INTO `bl_options` VALUES ('social_twitter', '', null);
 INSERT INTO `bl_options` VALUES ('social_weibo', '', null);
@@ -261,9 +231,4 @@ CREATE TABLE `bl_users` (
   `group_name` varchar(16) DEFAULT NULL,
   PRIMARY KEY (`uid`),
   UNIQUE KEY `AK_UNQ_BL_USER_USERNAME` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of bl_users
--- ----------------------------
-INSERT INTO `bl_users` VALUES ('1', 'admin', 'a66abb5684c45962d887564f08346e8d', '15908401995@163.com', null, 'admin', '1514345932', null, null, null);
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
