@@ -167,6 +167,12 @@
             }
         }
     });
+    function search(){
+        var q = $('#search-inp').val();
+        if (q && q != '') {
+            window.location.href = '/search/' + q;
+        }
+    }
 </script>
 <script data-no-instant>
     InstantClick.on('change', function (isInitialLoad) {

@@ -19,6 +19,7 @@ import com.blog.model.dto.ErrorCode;
 import com.blog.model.dto.Types;
 import com.blog.model.entity.Comments;
 import com.blog.model.entity.Contents;
+import com.blog.model.entity.Metas;
 import com.blog.service.CommentsService;
 import com.blog.service.ContentsService;
 import com.blog.service.MetasService;
@@ -138,6 +139,12 @@ public class IndexController extends BaseController {
         return this.render("post");
     }
 
+    @GetRoute(value = "find")
+    public String search(Request request) {
+        List<Metas> metas = metasService.getAllMetas();
+        request.attribute("metas",metas);
+        return this.render("page-search");
+    }
     /**
      * 搜索页
      *

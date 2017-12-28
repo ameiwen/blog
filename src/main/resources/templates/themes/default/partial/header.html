@@ -41,15 +41,10 @@
             <a href="${site_url('/links')}">友链</a>
             <a href="${site_url('/about')}">关于</a>
         </div>
-        <div class="navbar-search" onclick="">
+        <a href="${site_url('/find')}" class="navbar-search">
             <span class="icon-search"></span>
-            <form role="search" onsubmit="return false;">
-                <span class="search-box">
-                    <input type="text" id="search-inp" class="input" placeholder="搜索..." maxlength="30"
-                           autocomplete="off">
-                </span>
-            </form>
-        </div>
+        </a>
+
         <div class="navbar-mobile-menu" onclick="">
             <span class="icon-menu cross"><span class="middle"></span></span>
             <ul>
@@ -60,3 +55,8 @@
         </div>
     </div>
 </header>
+<script>
+    function goSearch(){
+        window.location.href= "";
+    }
+</script>

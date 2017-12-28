@@ -1,388 +1,367 @@
-2017-12-28 13:37:45:465 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | Environment: jdk.version    => 1.8.0_31
-2017-12-28 13:37:45:469 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | Environment: user.dir       => E:\idea\blog
-2017-12-28 13:37:45:469 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | Environment: java.io.tmpdir => C:\Users\MR-002\AppData\Local\Temp\
-2017-12-28 13:37:45:469 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | Environment: user.timezone  => Asia/Shanghai
-2017-12-28 13:37:45:469 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | Environment: file.encoding  => UTF-8
-2017-12-28 13:37:45:470 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | Environment: classpath      => E:\idea\blog\target\classes
-2017-12-28 13:37:45:637 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin
-2017-12-28 13:37:45:637 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/categories.html
-2017-12-28 13:37:45:638 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/feed.xml
-2017-12-28 13:37:45:638 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/atom.xml
-2017-12-28 13:37:45:638 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/page/new
-2017-12-28 13:37:45:638 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/tags
-2017-12-28 13:37:45:638 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/article
-2017-12-28 13:37:45:638 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/feed
-2017-12-28 13:37:45:638 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/index
-2017-12-28 13:37:45:638 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/page/publish
-2017-12-28 13:37:45:638 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/attach/upload
-2017-12-28 13:37:45:638 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/article/publish
-2017-12-28 13:37:45:639 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/category/:keyword/:page.html
-2017-12-28 13:37:45:639 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/comments/delete
-2017-12-28 13:37:45:639 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/template/content
-2017-12-28 13:37:45:639 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/article/publish
-2017-12-28 13:37:45:639 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/template/save
-2017-12-28 13:37:45:639 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/category/save
-2017-12-28 13:37:45:639 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/profile
-2017-12-28 13:37:45:639 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/attach
-2017-12-28 13:37:45:639 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/page/:page
-2017-12-28 13:37:45:639 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/profile
-2017-12-28 13:37:45:639 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/comments
-2017-12-28 13:37:45:640 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/categories
-2017-12-28 13:37:45:640 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/advanced
-2017-12-28 13:37:45:640 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/search.html
-2017-12-28 13:37:45:640 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/login
-2017-12-28 13:37:45:640 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/themes/setting
-2017-12-28 13:37:45:640 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/install
-2017-12-28 13:37:45:640 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/themes
-2017-12-28 13:37:45:640 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/article/:cid.html
-2017-12-28 13:37:45:640 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/page/modify
-2017-12-28 13:37:45:640 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/tags.html
-2017-12-28 13:37:45:641 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/page
-2017-12-28 13:37:45:641 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => ALL	/admin/attach/delete
-2017-12-28 13:37:45:641 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/sitemap
-2017-12-28 13:37:45:641 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/
-2017-12-28 13:37:45:641 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/search
-2017-12-28 13:37:45:642 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/template
-2017-12-28 13:37:45:642 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/password
-2017-12-28 13:37:45:642 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/sitemap.xml
-2017-12-28 13:37:45:642 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/page/:cid
-2017-12-28 13:37:45:642 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/:cid.html
-2017-12-28 13:37:45:642 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/category
-2017-12-28 13:37:45:642 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/category/:keyword/:page
-2017-12-28 13:37:45:642 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/search/:keyword/:page
-2017-12-28 13:37:45:642 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => ALL	/admin/page/delete
-2017-12-28 13:37:45:642 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/tag/:name/:page
-2017-12-28 13:37:45:643 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => ALL	/logout
-2017-12-28 13:37:45:643 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => ALL	/admin/article/delete
-2017-12-28 13:37:45:643 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/tag/:name.html
-2017-12-28 13:37:45:643 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/page/:page.html
-2017-12-28 13:37:45:643 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/search/:keyword.html
-2017-12-28 13:37:45:643 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/comments
-2017-12-28 13:37:45:643 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/setting
-2017-12-28 13:37:45:643 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/search/:keyword/:page.html
-2017-12-28 13:37:45:643 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/archives.html
-2017-12-28 13:37:45:643 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/comment
-2017-12-28 13:37:45:644 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/archives
-2017-12-28 13:37:45:644 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/tag/:name
-2017-12-28 13:37:45:644 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/category/:keyword.html
-2017-12-28 13:37:45:644 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/article/:cid
-2017-12-28 13:37:45:644 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/article/:cid
-2017-12-28 13:37:45:644 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/install
-2017-12-28 13:37:45:644 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/login
-2017-12-28 13:37:45:644 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/themes/setting
-2017-12-28 13:37:45:644 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => ALL	/admin/category/delete
-2017-12-28 13:37:45:644 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/comments/status
-2017-12-28 13:37:45:644 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/setting
-2017-12-28 13:37:45:645 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/:cid
-2017-12-28 13:37:45:645 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/article/modify
-2017-12-28 13:37:45:645 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/reload
-2017-12-28 13:37:45:645 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/themes/active
-2017-12-28 13:37:45:645 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/tag/:name/:page.html
-2017-12-28 13:37:45:645 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/category/:keyword
-2017-12-28 13:37:45:645 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/backup
-2017-12-28 13:37:45:645 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/search/:keyword
-2017-12-28 13:37:45:646 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add hook  => [BEFORE	/.*]
-2017-12-28 13:37:45:646 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add hook  => [AFTER	/.*]
-2017-12-28 13:37:45:651 INFO - [ _(:3」∠)_ ] c.b.i.SqliteJdbc          | blade dev mode: true
-2017-12-28 13:37:45:651 INFO - [ _(:3」∠)_ ] c.b.i.SqliteJdbc          | load mysql database path [127.0.0.1:3306/blog?useSSL=true&useUnicode=true&characterEncoding=UTF8]
-2017-12-28 13:37:45:651 INFO - [ _(:3」∠)_ ] c.b.i.SqliteJdbc          | load mysql database src [jdbc:mysql://127.0.0.1:3306/blog?useSSL=true&useUnicode=true&characterEncoding=UTF8]
-2017-12-28 13:37:45:943 INFO - [ _(:3」∠)_ ] c.b.i.SqliteJdbc          | database path is: 127.0.0.1:3306/blog?useSSL=true&useUnicode=true&characterEncoding=UTF8
-2017-12-28 13:37:45:950 INFO - [ _(:3」∠)_ ] c.b.j.Base                | ⬢ Blade-JDBC initializing
-2017-12-28 13:37:45:951 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | ⬢ Register bean: [com.blog.controller.admin.AttachController@5ae9d6ab, com.blog.controller.IndexController@28f2364a, com.blog.controller.admin.TemplateController@6197c477, com.blade.Environment@2f5c9bf2, com.blog.init.WebContext@3b944c3c, com.blog.controller.admin.PageController@2ed7d62, com.blog.controller.CategoryController@5d06a534, com.blog.hooks.BaseWebHook@164e366d, com.blog.service.OptionsService@fa26d34, com.blog.service.MetasService@664d07cf, com.blog.exception.GolbalExceptionHandler@e8a3137, com.blog.controller.InstallController@691093d5, com.blog.controller.admin.ThemeController@75c7980e, com.blog.service.SiteService@7b3a9a06, com.blog.service.CommentsService@24660fdf, com.blog.controller.admin.CommentController@4905aebd, com.blog.controller.admin.IndexController@4b487b, com.blog.controller.admin.ArticleController@2f8e08de, com.blog.service.ContentsService@3b02e207, com.blog.controller.admin.AuthController@5f16c39c, com.blog.hooks.BaseWebHook@164e366d, com.blog.init.WebContext@3b944c3c, com.blog.controller.admin.CategoryController@5444095]
-2017-12-28 13:37:46:039 INFO - [ _(:3」∠)_ ] j.t.JetEngineImpl         | JetEngine.version = 2.1.5
-2017-12-28 13:37:46:039 INFO - [ _(:3」∠)_ ] j.t.JetEngineImpl         | JetEngine.loader = jetbrick.template.loader.ClasspathResourceLoader, root = /templates/, reload = true
-2017-12-28 13:37:46:047 INFO - [ _(:3」∠)_ ] j.t.r.c.ClassResolver     | import package: java.lang.*
-2017-12-28 13:37:46:048 INFO - [ _(:3」∠)_ ] j.t.r.c.ClassResolver     | import package: java.util.*
-2017-12-28 13:37:46:050 INFO - [ _(:3」∠)_ ] j.t.r.m.MethodInvokerResolver | import 38 methods from class jetbrick.template.runtime.buildin.JetMethods
-2017-12-28 13:37:46:052 INFO - [ _(:3」∠)_ ] j.t.r.f.FunctionInvokerResolver | import 11 functions from class jetbrick.template.runtime.buildin.JetFunctions
-2017-12-28 13:37:46:068 INFO - [ _(:3」∠)_ ] j.t.r.t.TagInvokerResolver | import 2 tags from class jetbrick.template.runtime.buildin.JetTags
-2017-12-28 13:37:46:072 INFO - [ _(:3」∠)_ ] j.t.r.GlobalResolver      | Scanning @JetMethods, @JetFunctions, @JetTags implements from [com.blog] ...
-2017-12-28 13:37:46:105 INFO - [ _(:3」∠)_ ] j.t.r.GlobalResolver      | Found 0 annotated classes, time elapsed 33 ms.
-2017-12-28 13:37:46:127 INFO - [ _(:3」∠)_ ] j.t.JetTemplateImpl       | Loading template: /comm/macros.html
-2017-12-28 13:37:46:325 INFO - [ _(:3」∠)_ ] j.t.r.f.FunctionInvokerResolver | import 21 functions from class com.blog.extension.Commons
-2017-12-28 13:37:46:326 INFO - [ _(:3」∠)_ ] j.t.r.f.FunctionInvokerResolver | import 50 functions from class com.blog.extension.Theme
-2017-12-28 13:37:46:326 INFO - [ _(:3」∠)_ ] j.t.r.f.FunctionInvokerResolver | import 2 functions from class com.blog.extension.AdminCommons
-2017-12-28 13:37:46:326 INFO - [ _(:3」∠)_ ] j.t.r.t.TagInvokerResolver | import 1 tags from class com.blog.extension.JetTag
-2017-12-28 13:37:46:340 DEBUG - [ _(:3」∠)_ ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_options
-2017-12-28 13:37:46:340 DEBUG - [ _(:3」∠)_ ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
-2017-12-28 13:37:46:462 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | ⬢ Use NioEventLoopGroup
-2017-12-28 13:37:46:748 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | ⬢ Blog initialize successfully, Time elapsed: 1300 ms
-2017-12-28 13:37:46:748 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | ⬢ Blade start with 0.0.0.0:80
-2017-12-28 13:37:46:748 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | ⬢ Open your web browser and navigate to http://127.0.0.1:80 ⚡
-2017-12-28 13:37:48:243 INFO - [ worker@pool thread-1 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/
-2017-12-28 13:37:48:270 INFO - [ worker@pool thread-1 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
-2017-12-28 13:37:48:270 INFO - [ worker@pool thread-1 ] c.b.h.BaseWebHook         | 用户访问地址: /, 来路地址: 127.0.0.1
-2017-12-28 13:37:48:277 INFO - [ worker@pool thread-1 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/install
-2017-12-28 13:37:48:279 INFO - [ worker@pool thread-1 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
-2017-12-28 13:37:48:279 INFO - [ worker@pool thread-1 ] c.b.h.BaseWebHook         | 用户访问地址: /install, 来路地址: 127.0.0.1
-2017-12-28 13:37:48:338 INFO - [ worker@pool thread-1 ] j.t.JetTemplateImpl       | Loading template: install.html
-2017-12-28 13:37:48:372 INFO - [ worker@pool thread-1 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/plugins/jquery-steps/1.1.0/jquery.steps.css
-2017-12-28 13:37:48:373 INFO - [ worker@pool thread-6 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/plugins/bootstrap/3.3.7/css/bootstrap.min.css
-2017-12-28 13:37:48:374 INFO - [ worker@pool thread-5 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/plugins/limonte-sweetalert2/6.4.1/sweetalert2.min.css
-2017-12-28 13:37:48:374 INFO - [ worker@pool thread-3 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/plugins/jquery/3.2.1/jquery.min.js
-2017-12-28 13:37:48:375 INFO - [ worker@pool thread-2 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/plugins/bootstrap/3.3.7/js/bootstrap.min.js
-2017-12-28 13:37:48:376 INFO - [ worker@pool thread-4 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/css/style.min.css
-2017-12-28 13:37:48:388 INFO - [ worker@pool thread-1 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/plugins/limonte-sweetalert2/6.4.1/sweetalert2.min.js
-2017-12-28 13:37:48:389 INFO - [ worker@pool thread-4 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/plugins/jquery-validate/1.15.1/localization/messages_zh.min.js
-2017-12-28 13:37:48:390 INFO - [ worker@pool thread-2 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/plugins/jquery-validate/1.15.1/jquery.validate.min.js
-2017-12-28 13:37:48:392 INFO - [ worker@pool thread-5 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/plugins/jquery-steps/1.1.0/jquery.steps.min.js
-2017-12-28 13:37:48:392 INFO - [ worker@pool thread-3 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/js/base.js
-2017-12-28 13:37:48:398 INFO - [ worker@pool thread-6 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/js/install.js
-2017-12-28 13:37:48:420 INFO - [ worker@pool thread-3 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/images/bg/4.png
-2017-12-28 13:38:04:620 INFO - [ worker@pool thread-3 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/images/loading.gif
-2017-12-28 13:38:04:636 INFO - [ worker@pool thread-3 ] c.b.s.n.HttpServerHandler | HTTP/1.1	POST	/install
-2017-12-28 13:38:04:637 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
-2017-12-28 13:38:04:637 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | 用户访问地址: /install, 来路地址: 127.0.0.1
-2017-12-28 13:38:04:644 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => INSERT INTO bl_users (username, password, email, screen_name, created) VALUES (:username, :password, :email, :screen_name, :created)
-2017-12-28 13:38:04:705 WARN - [ worker@pool thread-3 ] o.s.Connection            | Could not roll back transaction. message: {}
-com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Can't call rollback when autocommit=true
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
-	at com.mysql.jdbc.Util.getInstance(Util.java:387)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:917)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:896)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:885)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
-	at com.mysql.jdbc.ConnectionImpl.rollback(ConnectionImpl.java:4618)
-	at org.sql2o.Connection.rollback(Connection.java:124)
-	at org.sql2o.Connection.onException(Connection.java:68)
-	at org.sql2o.Query.executeUpdate(Query.java:661)
-	at com.blade.jdbc.core.ActiveRecord.save(ActiveRecord.java:91)
-	at com.blog.service.SiteService.initSite(SiteService.java:53)
-	at com.blog.controller.InstallController.doInstall(InstallController.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at com.blade.kit.ReflectKit.invokeMethod(ReflectKit.java:89)
-	at com.blade.mvc.handler.RequestInvoker.handle(RequestInvoker.java:84)
-	at com.blade.mvc.handler.RequestInvoker.routeHandle(RequestInvoker.java:55)
-	at com.blade.server.netty.HttpServerHandler.channelRead0(HttpServerHandler.java:119)
-	at com.blade.server.netty.HttpServerHandler.channelRead0(HttpServerHandler.java:36)
-	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
-	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
-	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
-	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86)
-	at io.netty.handler.codec.http.HttpServerExpectContinueHandler.channelRead(HttpServerExpectContinueHandler.java:95)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:438)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:253)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:134)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-2017-12-28 13:38:04:709 ERROR - [ worker@pool thread-3 ] c.b.c.InstallController   | 安装失败
-org.sql2o.Sql2oException: Error in executeUpdate, Duplicate entry 'admin' for key 'AK_UNQ_BL_USER_USERNAME'
-	at org.sql2o.Query.executeUpdate(Query.java:662)
-	at com.blade.jdbc.core.ActiveRecord.save(ActiveRecord.java:91)
-	at com.blog.service.SiteService.initSite(SiteService.java:53)
-	at com.blog.controller.InstallController.doInstall(InstallController.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at com.blade.kit.ReflectKit.invokeMethod(ReflectKit.java:89)
-	at com.blade.mvc.handler.RequestInvoker.handle(RequestInvoker.java:84)
-	at com.blade.mvc.handler.RequestInvoker.routeHandle(RequestInvoker.java:55)
-	at com.blade.server.netty.HttpServerHandler.channelRead0(HttpServerHandler.java:119)
-	at com.blade.server.netty.HttpServerHandler.channelRead0(HttpServerHandler.java:36)
-	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
-	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
-	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
-	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86)
-	at io.netty.handler.codec.http.HttpServerExpectContinueHandler.channelRead(HttpServerExpectContinueHandler.java:95)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:438)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:253)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:134)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'admin' for key 'AK_UNQ_BL_USER_USERNAME'
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
-	at com.mysql.jdbc.Util.getInstance(Util.java:387)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:932)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2478)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2625)
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2551)
-	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
-	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2073)
-	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2009)
-	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5094)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1994)
-	at org.sql2o.Query.executeUpdate(Query.java:656)
-	... 49 more
-2017-12-28 13:38:07:125 INFO - [ worker@pool thread-3 ] c.b.s.n.HttpServerHandler | HTTP/1.1	POST	/install
-2017-12-28 13:38:07:125 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
-2017-12-28 13:38:07:125 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | 用户访问地址: /install, 来路地址: 127.0.0.1
-2017-12-28 13:38:07:130 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => INSERT INTO bl_users (username, password, email, screen_name, created) VALUES (:username, :password, :email, :screen_name, :created)
-2017-12-28 13:38:07:171 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => INSERT INTO bl_logs (action, author_id, ip, created) VALUES (:action, :author_id, :ip, :created)
-2017-12-28 13:38:07:221 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(*) FROM bl_options WHERE name = :p1
-2017-12-28 13:38:07:221 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [site_title]
-2017-12-28 13:38:07:232 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => UPDATE bl_options SET value = :p1 WHERE name = :p2
-2017-12-28 13:38:07:232 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [asdsa, site_title]
-2017-12-28 13:38:07:278 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(*) FROM bl_options WHERE name = :p1
-2017-12-28 13:38:07:278 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [site_url]
-2017-12-28 13:38:07:280 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => UPDATE bl_options SET value = :p1 WHERE name = :p2
-2017-12-28 13:38:07:280 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [http://127.0.0.1, site_url]
-2017-12-28 13:38:07:311 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_options
-2017-12-28 13:38:07:311 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
-2017-12-28 13:38:08:686 INFO - [ worker@pool thread-3 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/admin/login
-2017-12-28 13:38:08:687 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
-2017-12-28 13:38:08:687 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | 用户访问地址: /admin/login, 来路地址: 127.0.0.1
-2017-12-28 13:38:08:688 INFO - [ worker@pool thread-3 ] j.t.JetTemplateImpl       | Loading template: admin/login.html
-2017-12-28 13:38:08:700 INFO - [ worker@pool thread-3 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/plugins/font-awesome/4.7.0/css/font-awesome.min.css
-2017-12-28 13:38:08:701 INFO - [ worker@pool thread-6 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/css/style.min.css
-2017-12-28 13:38:08:702 INFO - [ worker@pool thread-5 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/js/base.js
-2017-12-28 13:38:08:736 INFO - [ worker@pool thread-5 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/images/bg/1.png
-2017-12-28 13:38:08:736 INFO - [ worker@pool thread-3 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/images/small/bg.png
-2017-12-28 13:38:12:800 INFO - [ worker@pool thread-5 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/
-2017-12-28 13:38:12:800 INFO - [ worker@pool thread-5 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
-2017-12-28 13:38:12:800 INFO - [ worker@pool thread-5 ] c.b.h.BaseWebHook         | 用户访问地址: /, 来路地址: 127.0.0.1
-2017-12-28 13:38:12:801 INFO - [ worker@pool thread-5 ] j.t.JetTemplateImpl       | Loading template: themes/default/index.html
-2017-12-28 13:38:12:806 INFO - [ worker@pool thread-5 ] j.t.JetTemplateImpl       | Loading template: themes/default/partial/header.html
-2017-12-28 13:38:12:820 DEBUG - [ worker@pool thread-5 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_contents WHERE type = :p1 AND status = :p2) tmp
-2017-12-28 13:38:12:820 DEBUG - [ worker@pool thread-5 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [post, publish]
-2017-12-28 13:38:12:832 DEBUG - [ worker@pool thread-5 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE type = :p1 AND status = :p2 ORDER BY created desc LIMIT 0, 12
-2017-12-28 13:38:12:832 DEBUG - [ worker@pool thread-5 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [post, publish]
-2017-12-28 13:38:12:980 DEBUG - [ worker@pool thread-5 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_contents WHERE type = :p1 AND status = :p2) tmp
-2017-12-28 13:38:12:980 DEBUG - [ worker@pool thread-5 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [post, publish]
-2017-12-28 13:38:12:985 DEBUG - [ worker@pool thread-5 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE type = :p1 AND status = :p2 ORDER BY created desc LIMIT 0, 12
-2017-12-28 13:38:12:985 DEBUG - [ worker@pool thread-5 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [post, publish]
-2017-12-28 13:38:12:990 INFO - [ worker@pool thread-5 ] j.t.JetTemplateImpl       | Loading template: themes/default/partial/footer.html
-2017-12-28 13:38:12:993 INFO - [ worker@pool thread-5 ] j.t.JetTemplateImpl       | Loading template: themes/default/partial/social.html
-2017-12-28 13:38:12:999 DEBUG - [ worker@pool thread-5 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2) tmp
-2017-12-28 13:38:12:999 DEBUG - [ worker@pool thread-5 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
-2017-12-28 13:38:13:004 DEBUG - [ worker@pool thread-5 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2 ORDER BY created desc LIMIT 0, 8
-2017-12-28 13:38:13:005 DEBUG - [ worker@pool thread-5 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
-2017-12-28 13:38:13:015 DEBUG - [ worker@pool thread-5 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments) tmp
-2017-12-28 13:38:13:015 DEBUG - [ worker@pool thread-5 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
-2017-12-28 13:38:13:031 DEBUG - [ worker@pool thread-5 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments ORDER BY created desc LIMIT 0, 8
-2017-12-28 13:38:13:032 DEBUG - [ worker@pool thread-5 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
-2017-12-28 13:38:13:055 INFO - [ worker@pool thread-3 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/templates/themes/default/static/css/style.min.css
-2017-12-28 13:38:13:058 INFO - [ worker@pool thread-5 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/templates/themes/default/static/css/xcode.min.css
-2017-12-28 13:38:13:068 INFO - [ worker@pool thread-3 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/templates/themes/default/static/img/logo.png
-2017-12-28 13:38:13:087 INFO - [ worker@pool thread-5 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/templates/themes/default/static/js/instantclick.min.js
-2017-12-28 13:38:13:087 INFO - [ worker@pool thread-3 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/templates/themes/default/static/js/headroom.min.js
-2017-12-28 13:38:13:091 INFO - [ worker@pool thread-6 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/templates/themes/default/static/img/rand/2.jpg
-2017-12-28 13:38:13:092 INFO - [ worker@pool thread-3 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/templates/themes/default/static/img/bg-ico.png
-2017-12-28 13:38:13:249 INFO - [ worker@pool thread-3 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/templates/themes/default/static/img/favicon.png
-2017-12-28 13:38:14:736 INFO - [ worker@pool thread-3 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/links
-2017-12-28 13:38:14:745 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
-2017-12-28 13:38:14:746 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | 用户访问地址: /links, 来路地址: 127.0.0.1
-2017-12-28 13:38:14:759 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE slug = :p1
-2017-12-28 13:38:14:759 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [links]
-2017-12-28 13:38:14:763 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => UPDATE bl_contents SET hits = :p1 WHERE cid = :p2
-2017-12-28 13:38:14:764 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [72, 3]
-2017-12-28 13:38:14:794 INFO - [ worker@pool thread-3 ] j.t.JetTemplateImpl       | Loading template: themes/default/page.html
-2017-12-28 13:38:14:806 INFO - [ worker@pool thread-3 ] j.t.JetTemplateImpl       | Loading template: themes/default/partial/comments.html
-2017-12-28 13:38:14:873 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2) tmp
-2017-12-28 13:38:14:873 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [3, 0]
-2017-12-28 13:38:14:880 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2 ORDER BY coid desc LIMIT 0, 6
-2017-12-28 13:38:14:880 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [3, 0]
-2017-12-28 13:38:14:884 INFO - [ worker@pool thread-3 ] j.t.JetTemplateImpl       | Loading template: /comm/tale_comment.html
-2017-12-28 13:38:14:889 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2) tmp
-2017-12-28 13:38:14:889 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
-2017-12-28 13:38:14:896 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2 ORDER BY created desc LIMIT 0, 8
-2017-12-28 13:38:14:896 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
-2017-12-28 13:38:14:906 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments) tmp
-2017-12-28 13:38:14:906 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
-2017-12-28 13:38:14:909 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments ORDER BY created desc LIMIT 0, 8
-2017-12-28 13:38:14:909 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
-2017-12-28 13:38:21:774 INFO - [ worker@pool thread-3 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/links
-2017-12-28 13:38:21:775 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
-2017-12-28 13:38:21:776 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | 用户访问地址: /links, 来路地址: 127.0.0.1
-2017-12-28 13:38:21:793 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE slug = :p1
-2017-12-28 13:38:21:793 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [links]
-2017-12-28 13:38:21:797 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => UPDATE bl_contents SET hits = :p1 WHERE cid = :p2
-2017-12-28 13:38:21:797 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [73, 3]
-2017-12-28 13:38:21:840 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2) tmp
-2017-12-28 13:38:21:841 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [3, 0]
-2017-12-28 13:38:21:846 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2 ORDER BY coid desc LIMIT 0, 6
-2017-12-28 13:38:21:846 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [3, 0]
-2017-12-28 13:38:21:852 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2) tmp
-2017-12-28 13:38:21:852 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
-2017-12-28 13:38:21:856 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2 ORDER BY created desc LIMIT 0, 8
-2017-12-28 13:38:21:856 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
-2017-12-28 13:38:21:869 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments) tmp
-2017-12-28 13:38:21:869 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
-2017-12-28 13:38:21:874 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments ORDER BY created desc LIMIT 0, 8
-2017-12-28 13:38:21:874 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
-2017-12-28 13:38:22:341 INFO - [ worker@pool thread-3 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/about
-2017-12-28 13:38:22:342 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
-2017-12-28 13:38:22:342 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | 用户访问地址: /about, 来路地址: 127.0.0.1
-2017-12-28 13:38:22:355 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE slug = :p1
-2017-12-28 13:38:22:355 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [about]
-2017-12-28 13:38:22:359 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => UPDATE bl_contents SET hits = :p1 WHERE cid = :p2
-2017-12-28 13:38:22:359 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [38, 1]
-2017-12-28 13:38:22:412 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2) tmp
-2017-12-28 13:38:22:412 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [1, 0]
-2017-12-28 13:38:22:417 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2 ORDER BY coid desc LIMIT 0, 6
-2017-12-28 13:38:22:417 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [1, 0]
-2017-12-28 13:38:22:423 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2) tmp
-2017-12-28 13:38:22:423 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
-2017-12-28 13:38:22:426 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2 ORDER BY created desc LIMIT 0, 8
-2017-12-28 13:38:22:427 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
-2017-12-28 13:38:22:433 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments) tmp
-2017-12-28 13:38:22:433 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
-2017-12-28 13:38:22:436 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments ORDER BY created desc LIMIT 0, 8
-2017-12-28 13:38:22:436 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:04:173 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | Environment: jdk.version    => 1.8.0_31
+2017-12-28 20:05:04:177 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | Environment: user.dir       => E:\idea\blog
+2017-12-28 20:05:04:178 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | Environment: java.io.tmpdir => C:\Users\MR-002\AppData\Local\Temp\
+2017-12-28 20:05:04:178 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | Environment: user.timezone  => Asia/Shanghai
+2017-12-28 20:05:04:178 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | Environment: file.encoding  => UTF-8
+2017-12-28 20:05:04:178 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | Environment: classpath      => E:\idea\blog\target\classes
+2017-12-28 20:05:04:351 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin
+2017-12-28 20:05:04:351 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/feed.xml
+2017-12-28 20:05:04:351 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/atom.xml
+2017-12-28 20:05:04:351 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/categories.html
+2017-12-28 20:05:04:351 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/page/new
+2017-12-28 20:05:04:352 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/article
+2017-12-28 20:05:04:352 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/tags
+2017-12-28 20:05:04:352 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/feed
+2017-12-28 20:05:04:352 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/index
+2017-12-28 20:05:04:352 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/article/publish
+2017-12-28 20:05:04:352 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/attach/upload
+2017-12-28 20:05:04:352 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/page/publish
+2017-12-28 20:05:04:352 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/category/:keyword/:page.html
+2017-12-28 20:05:04:352 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/comments/delete
+2017-12-28 20:05:04:353 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/template/content
+2017-12-28 20:05:04:353 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/article/publish
+2017-12-28 20:05:04:353 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/template/save
+2017-12-28 20:05:04:353 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/category/save
+2017-12-28 20:05:04:353 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/attach
+2017-12-28 20:05:04:353 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/profile
+2017-12-28 20:05:04:353 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/page/:page
+2017-12-28 20:05:04:353 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/profile
+2017-12-28 20:05:04:353 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/comments
+2017-12-28 20:05:04:353 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/categories
+2017-12-28 20:05:04:354 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/search.html
+2017-12-28 20:05:04:354 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/advanced
+2017-12-28 20:05:04:354 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/themes/setting
+2017-12-28 20:05:04:354 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/login
+2017-12-28 20:05:04:354 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/themes
+2017-12-28 20:05:04:354 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/install
+2017-12-28 20:05:04:354 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/article/:cid.html
+2017-12-28 20:05:04:354 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/page/modify
+2017-12-28 20:05:04:354 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/tags.html
+2017-12-28 20:05:04:355 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => ALL	/admin/attach/delete
+2017-12-28 20:05:04:355 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/page
+2017-12-28 20:05:04:355 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/sitemap
+2017-12-28 20:05:04:355 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/
+2017-12-28 20:05:04:355 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/search
+2017-12-28 20:05:04:356 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/template
+2017-12-28 20:05:04:356 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/sitemap.xml
+2017-12-28 20:05:04:356 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/password
+2017-12-28 20:05:04:356 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/:cid.html
+2017-12-28 20:05:04:356 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/page/:cid
+2017-12-28 20:05:04:356 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/category
+2017-12-28 20:05:04:356 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/search/:keyword/:page
+2017-12-28 20:05:04:356 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/category/:keyword/:page
+2017-12-28 20:05:04:356 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => ALL	/admin/page/delete
+2017-12-28 20:05:04:356 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/tag/:name/:page
+2017-12-28 20:05:04:357 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => ALL	/logout
+2017-12-28 20:05:04:357 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => ALL	/admin/article/delete
+2017-12-28 20:05:04:357 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/tag/:name.html
+2017-12-28 20:05:04:357 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/page/:page.html
+2017-12-28 20:05:04:357 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/find
+2017-12-28 20:05:04:357 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/search/:keyword.html
+2017-12-28 20:05:04:357 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/comments
+2017-12-28 20:05:04:357 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/setting
+2017-12-28 20:05:04:357 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/search/:keyword/:page.html
+2017-12-28 20:05:04:357 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/archives.html
+2017-12-28 20:05:04:357 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/comment
+2017-12-28 20:05:04:357 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/archives
+2017-12-28 20:05:04:357 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/tag/:name
+2017-12-28 20:05:04:357 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/article/:cid
+2017-12-28 20:05:04:358 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/article/:cid
+2017-12-28 20:05:04:358 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/category/:keyword.html
+2017-12-28 20:05:04:358 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/install
+2017-12-28 20:05:04:358 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/themes/setting
+2017-12-28 20:05:04:358 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/login
+2017-12-28 20:05:04:358 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => ALL	/admin/category/delete
+2017-12-28 20:05:04:358 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/comments/status
+2017-12-28 20:05:04:358 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/:cid
+2017-12-28 20:05:04:358 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/setting
+2017-12-28 20:05:04:358 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/article/modify
+2017-12-28 20:05:04:358 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/themes/active
+2017-12-28 20:05:04:359 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/admin/reload
+2017-12-28 20:05:04:359 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/tag/:name/:page.html
+2017-12-28 20:05:04:359 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/category/:keyword
+2017-12-28 20:05:04:359 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => GET	/search/:keyword
+2017-12-28 20:05:04:359 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add route => POST	/admin/backup
+2017-12-28 20:05:04:359 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add hook  => [BEFORE	/.*]
+2017-12-28 20:05:04:360 INFO - [ _(:3」∠)_ ] c.b.m.r.RouteMatcher      | Add hook  => [AFTER	/.*]
+2017-12-28 20:05:04:365 INFO - [ _(:3」∠)_ ] c.b.i.SqliteJdbc          | blade dev mode: true
+2017-12-28 20:05:04:366 INFO - [ _(:3」∠)_ ] c.b.i.SqliteJdbc          | load mysql database path [127.0.0.1:3306/blog?useSSL=true&useUnicode=true&characterEncoding=UTF8]
+2017-12-28 20:05:04:366 INFO - [ _(:3」∠)_ ] c.b.i.SqliteJdbc          | load mysql database src [jdbc:mysql://127.0.0.1:3306/blog?useSSL=true&useUnicode=true&characterEncoding=UTF8]
+2017-12-28 20:05:04:688 INFO - [ _(:3」∠)_ ] c.b.i.SqliteJdbc          | database path is: 127.0.0.1:3306/blog?useSSL=true&useUnicode=true&characterEncoding=UTF8
+2017-12-28 20:05:04:696 INFO - [ _(:3」∠)_ ] c.b.j.Base                | ⬢ Blade-JDBC initializing
+2017-12-28 20:05:04:697 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | ⬢ Register bean: [com.blog.controller.IndexController@695961e4, com.blog.controller.admin.AttachController@2b75a072, com.blog.controller.admin.TemplateController@194081e, com.blade.Environment@6fd76fcd, com.blog.init.WebContext@4d237592, com.blog.controller.admin.PageController@4bd32a74, com.blog.service.OptionsService@6aa60fe8, com.blog.service.MetasService@3edbbc76, com.blog.controller.CategoryController@6882d1da, com.blog.hooks.BaseWebHook@3ad0c634, com.blog.exception.GolbalExceptionHandler@60d357c9, com.blog.controller.InstallController@3087fa9, com.blog.controller.admin.ThemeController@7dfa7213, com.blog.service.SiteService@41a7eafe, com.blog.controller.admin.CommentController@3bb0901c, com.blog.service.CommentsService@7b0555f4, com.blog.controller.admin.IndexController@5541da6d, com.blog.controller.admin.ArticleController@2bcf3a21, com.blog.service.ContentsService@14407f34, com.blog.controller.admin.AuthController@45bb32bd, com.blog.hooks.BaseWebHook@3ad0c634, com.blog.controller.admin.CategoryController@1e720ad5, com.blog.init.WebContext@4d237592]
+2017-12-28 20:05:04:769 INFO - [ _(:3」∠)_ ] j.t.JetEngineImpl         | JetEngine.version = 2.1.5
+2017-12-28 20:05:04:769 INFO - [ _(:3」∠)_ ] j.t.JetEngineImpl         | JetEngine.loader = jetbrick.template.loader.ClasspathResourceLoader, root = /templates/, reload = true
+2017-12-28 20:05:04:778 INFO - [ _(:3」∠)_ ] j.t.r.c.ClassResolver     | import package: java.lang.*
+2017-12-28 20:05:04:778 INFO - [ _(:3」∠)_ ] j.t.r.c.ClassResolver     | import package: java.util.*
+2017-12-28 20:05:04:780 INFO - [ _(:3」∠)_ ] j.t.r.m.MethodInvokerResolver | import 38 methods from class jetbrick.template.runtime.buildin.JetMethods
+2017-12-28 20:05:04:782 INFO - [ _(:3」∠)_ ] j.t.r.f.FunctionInvokerResolver | import 11 functions from class jetbrick.template.runtime.buildin.JetFunctions
+2017-12-28 20:05:04:784 INFO - [ _(:3」∠)_ ] j.t.r.t.TagInvokerResolver | import 2 tags from class jetbrick.template.runtime.buildin.JetTags
+2017-12-28 20:05:04:785 INFO - [ _(:3」∠)_ ] j.t.r.GlobalResolver      | Scanning @JetMethods, @JetFunctions, @JetTags implements from [com.blog] ...
+2017-12-28 20:05:04:863 INFO - [ _(:3」∠)_ ] j.t.r.GlobalResolver      | Found 0 annotated classes, time elapsed 77 ms.
+2017-12-28 20:05:04:902 INFO - [ _(:3」∠)_ ] j.t.JetTemplateImpl       | Loading template: /comm/macros.html
+2017-12-28 20:05:05:195 INFO - [ _(:3」∠)_ ] j.t.r.f.FunctionInvokerResolver | import 21 functions from class com.blog.extension.Commons
+2017-12-28 20:05:05:195 INFO - [ _(:3」∠)_ ] j.t.r.f.FunctionInvokerResolver | import 50 functions from class com.blog.extension.Theme
+2017-12-28 20:05:05:196 INFO - [ _(:3」∠)_ ] j.t.r.f.FunctionInvokerResolver | import 2 functions from class com.blog.extension.AdminCommons
+2017-12-28 20:05:05:196 INFO - [ _(:3」∠)_ ] j.t.r.t.TagInvokerResolver | import 1 tags from class com.blog.extension.JetTag
+2017-12-28 20:05:05:221 DEBUG - [ _(:3」∠)_ ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_options
+2017-12-28 20:05:05:221 DEBUG - [ _(:3」∠)_ ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:05:473 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | ⬢ Use NioEventLoopGroup
+2017-12-28 20:05:05:749 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | ⬢ Blog initialize successfully, Time elapsed: 1586 ms
+2017-12-28 20:05:05:749 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | ⬢ Blade start with 0.0.0.0:80
+2017-12-28 20:05:05:749 INFO - [ _(:3」∠)_ ] c.b.s.n.NettyServer       | ⬢ Open your web browser and navigate to http://127.0.0.1:80 ⚡
+2017-12-28 20:05:10:216 INFO - [ worker@pool thread-1 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/find
+2017-12-28 20:05:10:236 INFO - [ worker@pool thread-1 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-28 20:05:10:236 INFO - [ worker@pool thread-1 ] c.b.h.BaseWebHook         | 用户访问地址: /find, 来路地址: 127.0.0.1
+2017-12-28 20:05:10:289 DEBUG - [ worker@pool thread-1 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_metas ORDER BY sort desc, mid desc
+2017-12-28 20:05:10:289 DEBUG - [ worker@pool thread-1 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:10:298 INFO - [ worker@pool thread-1 ] j.t.JetTemplateImpl       | Loading template: themes/default/page-search.html
+2017-12-28 20:05:10:308 INFO - [ worker@pool thread-1 ] j.t.JetTemplateImpl       | Loading template: themes/default/partial/header.html
+2017-12-28 20:05:10:336 INFO - [ worker@pool thread-1 ] j.t.JetTemplateImpl       | Loading template: themes/default/partial/footer.html
+2017-12-28 20:05:10:339 INFO - [ worker@pool thread-1 ] j.t.JetTemplateImpl       | Loading template: themes/default/partial/social.html
+2017-12-28 20:05:10:348 DEBUG - [ worker@pool thread-1 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2) tmp
+2017-12-28 20:05:10:348 DEBUG - [ worker@pool thread-1 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:10:365 DEBUG - [ worker@pool thread-1 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2 ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:10:365 DEBUG - [ worker@pool thread-1 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:10:383 DEBUG - [ worker@pool thread-1 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments) tmp
+2017-12-28 20:05:10:383 DEBUG - [ worker@pool thread-1 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:10:388 DEBUG - [ worker@pool thread-1 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:10:389 DEBUG - [ worker@pool thread-1 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:10:413 INFO - [ worker@pool thread-1 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/templates/themes/default/static/css/xcode.min.css
+2017-12-28 20:05:10:414 INFO - [ worker@pool thread-3 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/static/admin/plugins/jquery/3.2.1/jquery.min.js
+2017-12-28 20:05:10:414 INFO - [ worker@pool thread-2 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/templates/themes/default/static/css/style.min.css
+2017-12-28 20:05:10:429 INFO - [ worker@pool thread-3 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/templates/themes/default/static/js/headroom.min.js
+2017-12-28 20:05:10:445 INFO - [ worker@pool thread-3 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/templates/themes/default/static/js/instantclick.min.js
+2017-12-28 20:05:10:445 INFO - [ worker@pool thread-2 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/templates/themes/default/static/img/logo.png
+2017-12-28 20:05:10:481 INFO - [ worker@pool thread-3 ] c.b.s.n.StaticFileHandler | HTTP/1.1	GET	/templates/themes/default/static/img/favicon.png
+2017-12-28 20:05:11:395 INFO - [ worker@pool thread-3 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/archives
+2017-12-28 20:05:11:397 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-28 20:05:11:398 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | 用户访问地址: /archives, 来路地址: 127.0.0.1
+2017-12-28 20:05:11:411 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => select FROM_UNIXTIME(created,'%Y年%m月') as date_str, count(*) as count  from bl_contents where type = 'post' and status = 'publish' group by date_str order by date_str desc
+2017-12-28 20:05:11:411 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:11:434 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE type = :p1 AND status = :p2 AND created > :p3 AND created < :p4 ORDER BY created DESC
+2017-12-28 20:05:11:434 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [post, publish, 1512057600, 1514735999]
+2017-12-28 20:05:11:438 INFO - [ worker@pool thread-3 ] j.t.JetTemplateImpl       | Loading template: themes/default/archives.html
+2017-12-28 20:05:11:446 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2) tmp
+2017-12-28 20:05:11:446 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:11:452 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2 ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:11:452 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:11:460 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments) tmp
+2017-12-28 20:05:11:460 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:11:465 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:11:466 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:12:201 INFO - [ worker@pool thread-3 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/links
+2017-12-28 20:05:12:208 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-28 20:05:12:208 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | 用户访问地址: /links, 来路地址: 127.0.0.1
+2017-12-28 20:05:12:218 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE slug = :p1
+2017-12-28 20:05:12:218 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [links]
+2017-12-28 20:05:12:230 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => UPDATE bl_contents SET hits = :p1 WHERE cid = :p2
+2017-12-28 20:05:12:230 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [146, 3]
+2017-12-28 20:05:12:412 INFO - [ worker@pool thread-3 ] j.t.JetTemplateImpl       | Loading template: themes/default/page.html
+2017-12-28 20:05:12:604 INFO - [ worker@pool thread-3 ] j.t.JetTemplateImpl       | Loading template: themes/default/partial/comments.html
+2017-12-28 20:05:12:614 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2) tmp
+2017-12-28 20:05:12:615 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [3, 0]
+2017-12-28 20:05:12:622 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2 ORDER BY coid desc LIMIT 0, 6
+2017-12-28 20:05:12:622 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [3, 0]
+2017-12-28 20:05:12:626 INFO - [ worker@pool thread-3 ] j.t.JetTemplateImpl       | Loading template: /comm/tale_comment.html
+2017-12-28 20:05:12:631 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2) tmp
+2017-12-28 20:05:12:631 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:12:636 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2 ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:12:636 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:12:642 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments) tmp
+2017-12-28 20:05:12:642 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:12:646 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:12:646 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:13:604 INFO - [ worker@pool thread-3 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/archives
+2017-12-28 20:05:13:605 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-28 20:05:13:605 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | 用户访问地址: /archives, 来路地址: 127.0.0.1
+2017-12-28 20:05:13:615 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => select FROM_UNIXTIME(created,'%Y年%m月') as date_str, count(*) as count  from bl_contents where type = 'post' and status = 'publish' group by date_str order by date_str desc
+2017-12-28 20:05:13:616 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:13:630 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE type = :p1 AND status = :p2 AND created > :p3 AND created < :p4 ORDER BY created DESC
+2017-12-28 20:05:13:630 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [post, publish, 1512057600, 1514735999]
+2017-12-28 20:05:13:641 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2) tmp
+2017-12-28 20:05:13:641 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:13:646 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2 ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:13:646 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:13:651 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments) tmp
+2017-12-28 20:05:13:652 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:13:655 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:13:656 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:14:571 INFO - [ worker@pool thread-3 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/about
+2017-12-28 20:05:14:572 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-28 20:05:14:572 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | 用户访问地址: /about, 来路地址: 127.0.0.1
+2017-12-28 20:05:14:584 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE slug = :p1
+2017-12-28 20:05:14:585 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [about]
+2017-12-28 20:05:14:592 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => UPDATE bl_contents SET hits = :p1 WHERE cid = :p2
+2017-12-28 20:05:14:592 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [150, 1]
+2017-12-28 20:05:14:635 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2) tmp
+2017-12-28 20:05:14:636 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [1, 0]
+2017-12-28 20:05:14:640 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2 ORDER BY coid desc LIMIT 0, 6
+2017-12-28 20:05:14:640 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [1, 0]
+2017-12-28 20:05:14:704 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2) tmp
+2017-12-28 20:05:14:704 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:14:709 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2 ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:14:709 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:14:716 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments) tmp
+2017-12-28 20:05:14:716 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:14:720 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:14:720 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:15:460 INFO - [ worker@pool thread-3 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/links
+2017-12-28 20:05:15:461 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-28 20:05:15:461 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | 用户访问地址: /links, 来路地址: 127.0.0.1
+2017-12-28 20:05:15:470 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE slug = :p1
+2017-12-28 20:05:15:470 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [links]
+2017-12-28 20:05:15:474 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => UPDATE bl_contents SET hits = :p1 WHERE cid = :p2
+2017-12-28 20:05:15:474 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [147, 3]
+2017-12-28 20:05:15:515 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2) tmp
+2017-12-28 20:05:15:515 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [3, 0]
+2017-12-28 20:05:15:520 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2 ORDER BY coid desc LIMIT 0, 6
+2017-12-28 20:05:15:520 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [3, 0]
+2017-12-28 20:05:15:527 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2) tmp
+2017-12-28 20:05:15:527 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:15:531 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2 ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:15:531 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:15:536 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments) tmp
+2017-12-28 20:05:15:537 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:15:542 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:15:542 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:16:698 INFO - [ worker@pool thread-3 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/about
+2017-12-28 20:05:16:699 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-28 20:05:16:699 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | 用户访问地址: /about, 来路地址: 127.0.0.1
+2017-12-28 20:05:16:706 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE slug = :p1
+2017-12-28 20:05:16:706 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [about]
+2017-12-28 20:05:16:708 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => UPDATE bl_contents SET hits = :p1 WHERE cid = :p2
+2017-12-28 20:05:16:708 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [151, 1]
+2017-12-28 20:05:16:736 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2) tmp
+2017-12-28 20:05:16:736 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [1, 0]
+2017-12-28 20:05:16:739 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2 ORDER BY coid desc LIMIT 0, 6
+2017-12-28 20:05:16:739 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [1, 0]
+2017-12-28 20:05:16:743 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2) tmp
+2017-12-28 20:05:16:744 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:16:746 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2 ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:16:746 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:16:750 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments) tmp
+2017-12-28 20:05:16:750 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:16:753 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:16:753 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:17:275 INFO - [ worker@pool thread-3 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/links
+2017-12-28 20:05:17:276 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-28 20:05:17:276 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | 用户访问地址: /links, 来路地址: 127.0.0.1
+2017-12-28 20:05:17:287 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE slug = :p1
+2017-12-28 20:05:17:287 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [links]
+2017-12-28 20:05:17:293 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => UPDATE bl_contents SET hits = :p1 WHERE cid = :p2
+2017-12-28 20:05:17:293 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [148, 3]
+2017-12-28 20:05:17:326 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2) tmp
+2017-12-28 20:05:17:326 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [3, 0]
+2017-12-28 20:05:17:328 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2 ORDER BY coid desc LIMIT 0, 6
+2017-12-28 20:05:17:328 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [3, 0]
+2017-12-28 20:05:17:332 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2) tmp
+2017-12-28 20:05:17:332 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:17:335 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2 ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:17:335 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:17:340 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments) tmp
+2017-12-28 20:05:17:340 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:17:343 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:17:343 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:17:693 INFO - [ worker@pool thread-3 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/about
+2017-12-28 20:05:17:694 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-28 20:05:17:694 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | 用户访问地址: /about, 来路地址: 127.0.0.1
+2017-12-28 20:05:17:704 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE slug = :p1
+2017-12-28 20:05:17:705 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [about]
+2017-12-28 20:05:17:709 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => UPDATE bl_contents SET hits = :p1 WHERE cid = :p2
+2017-12-28 20:05:17:710 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [152, 1]
+2017-12-28 20:05:17:748 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2) tmp
+2017-12-28 20:05:17:748 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [1, 0]
+2017-12-28 20:05:17:752 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2 ORDER BY coid desc LIMIT 0, 6
+2017-12-28 20:05:17:752 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [1, 0]
+2017-12-28 20:05:17:756 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2) tmp
+2017-12-28 20:05:17:756 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:17:760 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2 ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:17:760 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:17:765 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments) tmp
+2017-12-28 20:05:17:765 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:17:767 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:17:767 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:18:113 INFO - [ worker@pool thread-3 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/find
+2017-12-28 20:05:18:114 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-28 20:05:18:114 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | 用户访问地址: /find, 来路地址: 127.0.0.1
+2017-12-28 20:05:18:119 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_metas ORDER BY sort desc, mid desc
+2017-12-28 20:05:18:119 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:18:128 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2) tmp
+2017-12-28 20:05:18:129 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:18:134 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2 ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:18:134 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:18:140 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments) tmp
+2017-12-28 20:05:18:140 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:18:144 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:18:144 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:18:907 INFO - [ worker@pool thread-3 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/about
+2017-12-28 20:05:18:907 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-28 20:05:18:908 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | 用户访问地址: /about, 来路地址: 127.0.0.1
+2017-12-28 20:05:18:916 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE slug = :p1
+2017-12-28 20:05:18:916 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [about]
+2017-12-28 20:05:18:919 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => UPDATE bl_contents SET hits = :p1 WHERE cid = :p2
+2017-12-28 20:05:18:919 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [153, 1]
+2017-12-28 20:05:18:970 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2) tmp
+2017-12-28 20:05:18:970 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [1, 0]
+2017-12-28 20:05:18:973 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2 ORDER BY coid desc LIMIT 0, 6
+2017-12-28 20:05:18:973 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [1, 0]
+2017-12-28 20:05:18:978 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2) tmp
+2017-12-28 20:05:18:979 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:18:982 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2 ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:18:982 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:18:986 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments) tmp
+2017-12-28 20:05:18:986 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:18:990 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:18:990 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:19:322 INFO - [ worker@pool thread-3 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/links
+2017-12-28 20:05:19:323 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-28 20:05:19:323 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | 用户访问地址: /links, 来路地址: 127.0.0.1
+2017-12-28 20:05:19:329 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE slug = :p1
+2017-12-28 20:05:19:330 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [links]
+2017-12-28 20:05:19:331 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => UPDATE bl_contents SET hits = :p1 WHERE cid = :p2
+2017-12-28 20:05:19:331 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [149, 3]
+2017-12-28 20:05:19:377 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2) tmp
+2017-12-28 20:05:19:377 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [3, 0]
+2017-12-28 20:05:19:381 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2 ORDER BY coid desc LIMIT 0, 6
+2017-12-28 20:05:19:381 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [3, 0]
+2017-12-28 20:05:19:385 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2) tmp
+2017-12-28 20:05:19:385 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:19:388 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2 ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:19:388 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:19:393 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments) tmp
+2017-12-28 20:05:19:393 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:19:396 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:19:396 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:20:149 INFO - [ worker@pool thread-3 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/about
+2017-12-28 20:05:20:149 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-28 20:05:20:150 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | 用户访问地址: /about, 来路地址: 127.0.0.1
+2017-12-28 20:05:20:160 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE slug = :p1
+2017-12-28 20:05:20:160 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [about]
+2017-12-28 20:05:20:164 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => UPDATE bl_contents SET hits = :p1 WHERE cid = :p2
+2017-12-28 20:05:20:164 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [154, 1]
+2017-12-28 20:05:20:203 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2) tmp
+2017-12-28 20:05:20:203 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [1, 0]
+2017-12-28 20:05:20:207 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments WHERE cid = :p1 AND parent = :p2 ORDER BY coid desc LIMIT 0, 6
+2017-12-28 20:05:20:207 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [1, 0]
+2017-12-28 20:05:20:211 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2) tmp
+2017-12-28 20:05:20:211 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:20:214 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2 ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:20:214 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:20:218 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments) tmp
+2017-12-28 20:05:20:218 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:20:220 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:20:220 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:20:797 INFO - [ worker@pool thread-3 ] c.b.s.n.HttpServerHandler | HTTP/1.1	GET	/find
+2017-12-28 20:05:20:797 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2017-12-28 20:05:20:798 INFO - [ worker@pool thread-3 ] c.b.h.BaseWebHook         | 用户访问地址: /find, 来路地址: 127.0.0.1
+2017-12-28 20:05:20:805 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_metas ORDER BY sort desc, mid desc
+2017-12-28 20:05:20:806 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:20:821 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2) tmp
+2017-12-28 20:05:20:821 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:20:826 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_contents WHERE status = :p1 AND type = :p2 ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:20:826 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => [publish, post]
+2017-12-28 20:05:20:832 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT COUNT(0) FROM (SELECT * FROM bl_comments) tmp
+2017-12-28 20:05:20:832 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []
+2017-12-28 20:05:20:836 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Execute SQL => SELECT * FROM bl_comments ORDER BY created desc LIMIT 0, 8
+2017-12-28 20:05:20:836 DEBUG - [ worker@pool thread-3 ] c.b.j.c.ActiveRecord      | ⬢ Parameters  => []

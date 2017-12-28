@@ -21,6 +21,15 @@ import java.util.stream.Collectors;
 @Bean
 public class MetasService {
 
+
+    /**
+     * 获取全部标签
+     * @return
+     */
+    public List<Metas> getAllMetas(){
+        return new Metas().findAll(OrderBy.of("sort desc, mid desc"));
+    }
+
     /**
      * 根据类型查询项目列表
      *
