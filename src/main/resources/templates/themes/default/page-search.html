@@ -8,8 +8,8 @@
             </span>
         </form>
         <div class="search-tags">
-            #for(category : categories)
-                <a href="${(permalink())}" class="bg-white"># ${category.name} (${category.count})</a>
+            #for(tag : tags)
+                <a href="/tag/${tag.name}" class="bg-white"># ${tag.name} (${tag.count})</a>
             #end
             <!--<p> 暂时还没有记录哟 ! </p>-->
             <div class="search-tags-hr bg-deepgrey"></div>
