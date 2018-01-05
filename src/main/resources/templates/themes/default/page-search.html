@@ -8,13 +8,10 @@
             </span>
         </form>
         <div class="search-tags">
-            #for(meta : metas)
-                <a href="" class=" bg-white"># ${meta.name}</a>
+            #for(category : categories)
+                <a href="${(permalink())}" class="bg-white"># ${category.name} (${category.count})</a>
             #end
-            <!--<?php endwhile; ?>-->
-            <!--<?php else: ?>-->
-            <p> 暂时还没有记录哟 ! </p>
-            <!--<?php endif; ?>-->
+            <!--<p> 暂时还没有记录哟 ! </p>-->
             <div class="search-tags-hr bg-deepgrey"></div>
         </div>
     </div>

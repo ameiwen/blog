@@ -141,8 +141,8 @@ public class IndexController extends BaseController {
 
     @GetRoute(value = {"find","search.html"})
     public String search(Request request) {
-        List<Metas> metas = metasService.getAllMetas();
-        request.attribute("metas",metas);
+        List<Metas> categories = siteService.getMetas(Types.RECENT_META, Types.CATEGORY, TaleConst.MAX_POSTS);
+        request.attribute("categories",categories);
         return this.render("page-search");
     }
     /**
