@@ -139,7 +139,7 @@ public class IndexController extends BaseController {
         return this.render("post");
     }
 
-    @GetRoute(value = "find")
+    @GetRoute(value = {"find","search.html"})
     public String search(Request request) {
         List<Metas> metas = metasService.getAllMetas();
         request.attribute("metas",metas);
