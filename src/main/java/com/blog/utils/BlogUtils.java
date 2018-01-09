@@ -1,11 +1,14 @@
 package com.blog.utils;
 
+import com.alibaba.fastjson.JSONObject;
 import com.blade.kit.DateKit;
 import com.blade.kit.Hashids;
 import com.blade.kit.StringKit;
+import com.alibaba.fastjson.JSON;
 import com.blade.mvc.http.Request;
 import com.blade.mvc.http.Response;
 import com.blade.mvc.http.Session;
+import com.blog.comment.Constants;
 import com.blog.controller.admin.AttachController;
 import com.blog.extension.Commons;
 import com.blog.extension.Theme;
@@ -17,6 +20,8 @@ import com.sun.syndication.feed.rss.Content;
 import com.sun.syndication.feed.rss.Item;
 import com.sun.syndication.io.FeedException;
 import com.sun.syndication.io.WireFeedOutput;
+import org.apache.http.HttpResponse;
+import org.apache.http.util.EntityUtils;
 import org.commonmark.Extension;
 import org.commonmark.ext.gfm.tables.TablesExtension;
 import org.commonmark.node.Node;
@@ -39,7 +44,7 @@ import java.util.stream.Collectors;
  * <p>
  * Created by biezhi on 2017/2/21.
  */
-public class TaleUtils {
+public class BlogUtils {
 
     /**
      * 一个月
@@ -293,7 +298,7 @@ public class TaleUtils {
 
     public static String getSitemapXml(List<Contents> articles) {
         List<Url> urls = articles.stream()
-                .map(TaleUtils::parse)
+                .map(BlogUtils::parse)
                 .collect(Collectors.toList());
         urls.add(new Url(Commons.site_url() + "/archives"));
 
@@ -382,5 +387,36 @@ public class TaleUtils {
             new File(dir).mkdirs();
         }
         return prefix + "/" + com.blade.kit.UUID.UU32() + "." + StringKit.fileExt(name);
+    }
+
+    /**
+     * 接口地址：https://market.aliyun.com/products/57002003/cmapi010805.html?spm=5176.10695662.1996646101.searchclickresult.5684c326uqjqGf#sku=yuncode480500000
+     * ip    ip地址   xxx.75.225.254
+     * country 国家   中国
+     * area    大区   华北
+     * region  省     北京市
+     * city    城市   北京市
+     * county  区县   朝阳区
+     * @param ip
+     * @return
+     */
+    public static Map<String,Object> getIpAddress(String ip){
+        Map<String, String> headers = new HashMap<String, String>();
+        headers.put("Authorization", "APPCODE " + Constants.IP_SEARCH_APPCODE);
+        Map<String, String> querys = new HashMap<String, String>();
+        querys.put("ip", ip);
+        Map<String,Object> result = null;
+        try {
+            HttpResponse response =  HttpUtils.doGet(Constants.IP_SEARCH_HOST, Constants.IP_SEARCH_PATH, "GET", headers, querys);
+            String address = EntityUtils.toString(response.getEntity());
+            result =  JSON.parseObject(address);
+            String status = result.get("code").toString();
+            if("0".equals(status)){
+                return (Map<String, Object>) result.get("data");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
