@@ -17,7 +17,7 @@ import com.blog.init.TaleConst;
 import com.blog.model.dto.*;
 import com.blog.model.entity.*;
 import com.blog.utils.MapCache;
-import com.blog.utils.TaleUtils;
+import com.blog.utils.BlogUtils;
 import com.blog.utils.ZipUtils;
 
 import java.io.File;
@@ -260,7 +260,7 @@ public class SiteService {
         if (Types.RANDOM_META.equals(searchType)) {
             List<Integer> mids = new ActiveRecord().queryAll(Integer.class, "select mid from bl_metas where type = ? order by random() * mid limit ?", type, limit);
             if (BladeKit.isNotEmpty(mids)) {
-                String in = TaleUtils.listToInSql(mids);
+                String in = BlogUtils.listToInSql(mids);
                 String sql = "select a.*, count(b.cid) as count from bl_metas a left join `bl_relationships` b on a.mid = b.mid " +
                         "where a.mid in " + in + "group by a.mid order by count desc, a.mid desc";
 

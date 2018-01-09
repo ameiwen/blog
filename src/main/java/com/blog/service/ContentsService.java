@@ -11,7 +11,7 @@ import com.blog.init.TaleConst;
 import com.blog.model.dto.Types;
 import com.blog.model.entity.Contents;
 import com.blog.model.entity.Relationships;
-import com.blog.utils.TaleUtils;
+import com.blog.utils.BlogUtils;
 import com.vdurmont.emoji.EmojiParser;
 
 import java.util.Optional;
@@ -76,7 +76,7 @@ public class ContentsService {
             if (contents.getSlug().length() < 5) {
                 throw new TipException("路径太短了");
             }
-            if (!TaleUtils.isPath(contents.getSlug())) {
+            if (!BlogUtils.isPath(contents.getSlug())) {
                 throw new TipException("您输入的路径不合法");
             }
 

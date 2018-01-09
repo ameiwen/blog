@@ -24,7 +24,7 @@ import com.blog.service.CommentsService;
 import com.blog.service.ContentsService;
 import com.blog.service.MetasService;
 import com.blog.service.SiteService;
-import com.blog.utils.TaleUtils;
+import com.blog.utils.BlogUtils;
 import com.vdurmont.emoji.EmojiParser;
 import lombok.extern.slf4j.Slf4j;
 
@@ -204,7 +204,7 @@ public class IndexController extends BaseController {
                 .findAll(OrderBy.desc("created"));
 
         try {
-            String xml = TaleUtils.getRssXml(articles);
+            String xml = BlogUtils.getRssXml(articles);
             response.contentType("text/xml; charset=utf-8");
             response.body(xml);
         } catch (Exception e) {
@@ -224,7 +224,7 @@ public class IndexController extends BaseController {
                 .findAll(OrderBy.desc("created"));
 
         try {
-            String xml = TaleUtils.getSitemapXml(articles);
+            String xml = BlogUtils.getSitemapXml(articles);
             response.contentType("text/xml; charset=utf-8");
             response.body(xml);
         } catch (Exception e) {
@@ -240,7 +240,7 @@ public class IndexController extends BaseController {
      */
     @Route(value = "logout")
     public void logout(Session session, Response response) {
-        TaleUtils.logout(session, response);
+        BlogUtils.logout(session, response);
     }
 
     /**
@@ -266,8 +266,8 @@ public class IndexController extends BaseController {
             return RestResponse.fail("您发表评论太快了，请过会再试");
         }
 
-        comments.setAuthor(TaleUtils.cleanXSS(comments.getAuthor()));
-        comments.setContent(TaleUtils.cleanXSS(comments.getContent()));
+        comments.setAuthor(BlogUtils.cleanXSS(comments.getAuthor()));
+        comments.setContent(BlogUtils.cleanXSS(comments.getContent()));
 
         comments.setAuthor(EmojiParser.parseToAliases(comments.getAuthor()));
         comments.setContent(EmojiParser.parseToAliases(comments.getContent()));

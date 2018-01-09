@@ -1,18 +1,24 @@
 package com.blog.hooks;
 
 import com.blade.ioc.annotation.Bean;
+import com.blade.ioc.annotation.Inject;
 import com.blade.mvc.hook.Signature;
 import com.blade.mvc.hook.WebHook;
 import com.blade.mvc.http.Request;
 import com.blade.mvc.http.Response;
 import com.blog.init.TaleConst;
 import com.blog.model.entity.Users;
-import com.blog.utils.TaleUtils;
+import com.blog.service.VisitedService;
+import com.blog.utils.BlogUtils;
 import lombok.extern.slf4j.Slf4j;
+
 
 @Bean
 @Slf4j
 public class BaseWebHook implements WebHook {
+
+    @Inject
+    private VisitedService visitedService;
 
     @Override
     public boolean before(Signature signature) {
@@ -27,8 +33,7 @@ public class BaseWebHook implements WebHook {
             response.text("You have been banned, brother");
             return false;
         }
-
-        log.info("UserAgent: {}", request.userAgent());
+        visitedService.saveVisited("118.114.204.150");
         log.info("用户访问地址: {}, 来路地址: {}", uri, ip);
 
         if (uri.startsWith(TaleConst.STATIC_URI)) {
@@ -47,10 +52,10 @@ public class BaseWebHook implements WebHook {
     }
 
     private boolean isRedirect(Request request, Response response) {
-        Users user = TaleUtils.getLoginUser();
+        Users user = BlogUtils.getLoginUser();
         String uri  = request.uri();
         if (null == user) {
-            Integer uid = TaleUtils.getCookieUid(request);
+            Integer uid = BlogUtils.getCookieUid(request);
             if (null != uid) {
                 user = new Users().find(uid);
                 request.session().attribute(TaleConst.LOGIN_SESSION_KEY, user);

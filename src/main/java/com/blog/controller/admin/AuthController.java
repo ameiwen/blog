@@ -18,7 +18,7 @@ import com.blog.model.dto.LogActions;
 import com.blog.model.entity.Logs;
 import com.blog.model.entity.Users;
 import com.blog.model.param.LoginParam;
-import com.blog.utils.TaleUtils;
+import com.blog.utils.BlogUtils;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -62,7 +62,7 @@ public class AuthController extends BaseController {
             }
             session.attribute(TaleConst.LOGIN_SESSION_KEY, user);
             if (StringKit.isNotBlank(loginParam.getRemeberMe())) {
-                TaleUtils.setCookie(response, user.getUid());
+                BlogUtils.setCookie(response, user.getUid());
             }
 
             Users temp = new Users();

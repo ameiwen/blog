@@ -3,7 +3,7 @@ package com.blog.controller;
 import com.blade.mvc.http.Request;
 import com.blog.model.entity.Users;
 import com.blog.utils.MapCache;
-import com.blog.utils.TaleUtils;
+import com.blog.utils.BlogUtils;
 
 /**
  * Created by biezhi on 2017/2/21.
@@ -29,7 +29,7 @@ public abstract class BaseController {
     }
 
     public Users user() {
-        return TaleUtils.getLoginUser();
+        return BlogUtils.getLoginUser();
     }
 
     public Integer getUid(){

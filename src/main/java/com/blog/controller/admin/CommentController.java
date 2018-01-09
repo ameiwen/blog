@@ -13,7 +13,7 @@ import com.blog.model.entity.Comments;
 import com.blog.model.entity.Users;
 import com.blog.service.CommentsService;
 import com.blog.service.SiteService;
-import com.blog.utils.TaleUtils;
+import com.blog.utils.BlogUtils;
 import com.vdurmont.emoji.EmojiParser;
 import lombok.extern.slf4j.Slf4j;
 
@@ -106,7 +106,7 @@ public class CommentController extends BaseController {
             return RestResponse.fail("不存在该评论");
         }
         Users users = this.user();
-        content = TaleUtils.cleanXSS(content);
+        content = BlogUtils.cleanXSS(content);
         content = EmojiParser.parseToAliases(content);
 
         Comments comments = new Comments();

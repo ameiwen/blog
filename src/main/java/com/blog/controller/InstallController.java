@@ -17,7 +17,7 @@ import com.blog.init.TaleConst;
 import com.blog.model.entity.Users;
 import com.blog.service.OptionsService;
 import com.blog.service.SiteService;
-import com.blog.utils.TaleUtils;
+import com.blog.utils.BlogUtils;
 import lombok.extern.slf4j.Slf4j;
 
 import java.nio.file.Files;
@@ -72,7 +72,7 @@ public class InstallController extends BaseController {
                 return RestResponse.fail("请输入6-14位密码");
             }
 
-            if (StringKit.isNotBlank(admin_email) && !TaleUtils.isEmail(admin_email)) {
+            if (StringKit.isNotBlank(admin_email) && !BlogUtils.isEmail(admin_email)) {
                 return RestResponse.fail("邮箱格式不正确");
             }
 

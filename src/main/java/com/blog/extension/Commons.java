@@ -5,7 +5,7 @@ import com.blade.kit.*;
 import com.blog.controller.BaseController;
 import com.blog.init.TaleConst;
 import com.blog.service.SiteService;
-import com.blog.utils.TaleUtils;
+import com.blog.utils.BlogUtils;
 import com.vdurmont.emoji.EmojiParser;
 
 import java.util.Date;
@@ -244,7 +244,7 @@ public final class Commons {
      * @return
      */
     public static String show_thumb(String content) {
-        content = TaleUtils.mdToHtml(content);
+        content = BlogUtils.mdToHtml(content);
         if (content.contains("<img")) {
             String  img       = "";
             String  regEx_img = "<img.*src\\s*=\\s*(.*?)[^>]*?>";
