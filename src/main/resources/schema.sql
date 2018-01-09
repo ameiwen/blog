@@ -232,3 +232,25 @@ CREATE TABLE `bl_users` (
   PRIMARY KEY (`uid`),
   UNIQUE KEY `AK_UNQ_BL_USER_USERNAME` (`username`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+drop table if exists bl_visited;
+
+/*==============================================================*/
+/* Table: bl_visited                                            */
+/*==============================================================*/
+create table bl_visited
+(
+   id                   integer not null auto_increment,
+   user_id              integer,
+   ip                   varchar(50),
+   country              varchar(50),
+   area                 varchar(50),
+   region               varchar(50),
+   city                 varchar(50),
+   county               varchar(50),
+   visited_num          integer default 1,
+   create_time          integer,
+   primary key (id)
+)
+charset = UTF8;
+
