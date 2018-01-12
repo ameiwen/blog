@@ -119,7 +119,7 @@ public class CommentController extends BaseController {
         if (StringKit.isNotBlank(users.getEmail())) {
             comments.setMail(users.getEmail());
         } else {
-            comments.setMail("support@tale.me");
+            comments.setMail("yanghbwork@163.com");
         }
         comments.setParent(coid);
         try {

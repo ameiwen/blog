@@ -19,11 +19,9 @@ import com.blog.model.dto.ErrorCode;
 import com.blog.model.dto.Types;
 import com.blog.model.entity.Comments;
 import com.blog.model.entity.Contents;
+import com.blog.model.entity.Email;
 import com.blog.model.entity.Metas;
-import com.blog.service.CommentsService;
-import com.blog.service.ContentsService;
-import com.blog.service.MetasService;
-import com.blog.service.SiteService;
+import com.blog.service.*;
 import com.blog.utils.BlogUtils;
 import com.vdurmont.emoji.EmojiParser;
 import lombok.extern.slf4j.Slf4j;
@@ -52,6 +50,9 @@ public class IndexController extends BaseController {
 
     @Inject
     private SiteService siteService;
+
+    @Inject
+    private EmailTaskService emailTaskService;
 
     /**
      * 首页
@@ -273,8 +274,16 @@ public class IndexController extends BaseController {
         comments.setIp(request.address());
         comments.setParent(comments.getCoid());
 
+        Email emailTask = new Email();
+        emailTask.setCid(comments.getCid());
+        emailTask.setAuthor(comments.getAuthor());
+        emailTask.setMsg(comments.getContent());
+        emailTask.setIp(comments.getIp());
+        emailTask.setFunction_name("reply");
+        emailTask.setEmail(comments.getMail());
         try {
             commentsService.saveComment(comments);
+            emailTaskService.saveEmailTask(emailTask);
             response.cookie("tale_remember_author", URLEncoder.encode(comments.getAuthor(), "UTF-8"), 7 * 24 * 60 * 60);
             response.cookie("tale_remember_mail", URLEncoder.encode(comments.getMail(), "UTF-8"), 7 * 24 * 60 * 60);
             if (StringKit.isNotBlank(comments.getUrl())) {
