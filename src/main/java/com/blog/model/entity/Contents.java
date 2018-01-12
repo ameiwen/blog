@@ -59,8 +59,6 @@ public class Contents extends ActiveRecord {
     private Boolean allowPing;
     // 允许出现在聚合中
     private Boolean allowFeed;
-    //文章作者
-    private String author;
 
     public Integer getCid() {
         return cid;
@@ -205,13 +203,4 @@ public class Contents extends ActiveRecord {
     public void setAllowFeed(Boolean allowFeed) {
         this.allowFeed = allowFeed;
     }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
 }
