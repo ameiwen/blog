@@ -12,8 +12,6 @@ import static com.blog.init.TaleConst.MAX_TITLE_COUNT;
 
 /**
  * 内容
- *
- * @author biezhi
  */
 @Data
 @Table(value = "bl_contents", pk = "cid")

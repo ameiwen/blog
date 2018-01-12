@@ -17,7 +17,6 @@ import java.util.List;
 /**
  * 评论Service
  *
- * @author biezhi
  * @since 1.3.1
  */
 @Bean

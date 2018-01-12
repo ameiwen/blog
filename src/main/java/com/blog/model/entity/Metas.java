@@ -7,7 +7,6 @@ import lombok.Data;
 /**
  * 元数据
  *
- * @author biezhi
  */
 @Data
 @Table(value = "bl_metas", pk = "mid")

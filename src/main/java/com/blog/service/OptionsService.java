@@ -11,7 +11,6 @@ import java.util.Map;
 /**
  * 配置Service
  *
- * @author biezhi
  * @since 1.3.1
  */
 @Bean

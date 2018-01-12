@@ -20,7 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * 评论管理
  * <p>
- * Created by biezhi on 2017/2/26.
+ *
  */
 @Slf4j
 @Path("admin/comments")

@@ -1,8 +1,5 @@
 package com.blog.model.dto;
 
-/**
- * Created by biezhi on 2017/2/21.
- */
 public interface Types {
 
     String TAG = "tag";

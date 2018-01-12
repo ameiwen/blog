@@ -3,7 +3,6 @@ package com.blog.model.dto;
 /**
  * 日志操作常量
  *
- * Created by biezhi on 2017/2/26.
  */
 public interface LogActions {
 

@@ -7,7 +7,6 @@ import lombok.Data;
 /**
  * 附件
  * <p>
- * Created by biezhi on 2017/2/23.
  */
 @Data
 @Table("bl_attach")

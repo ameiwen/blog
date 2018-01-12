@@ -42,7 +42,6 @@ import java.util.stream.Collectors;
 /**
  * Tale工具类
  * <p>
- * Created by biezhi on 2017/2/21.
  */
 public class BlogUtils {
 

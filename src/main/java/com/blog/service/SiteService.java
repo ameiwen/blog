@@ -29,7 +29,6 @@ import java.util.stream.Collectors;
 /**
  * 站点Service
  *
- * @author biezhi
  * @since 1.3.1
  */
 @Bean

@@ -6,9 +6,7 @@ import com.blade.validator.ValidatorMiddleware;
 import com.blog.init.TaleLoader;
 
 /**
- * Tale启动类
- *
- * @author biezhi
+ * 启动类
  */
 public class Application {
 

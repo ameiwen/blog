@@ -23,7 +23,7 @@ import lombok.extern.slf4j.Slf4j;
 
 /**
  * 登录，退出
- * Created by biezhi on 2017/2/21.
+ *
  */
 @Slf4j
 @Path("admin")

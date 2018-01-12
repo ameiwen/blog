@@ -11,7 +11,6 @@ import lombok.Data;
 /**
  * 评论
  *
- * @author biezhi
  */
 @Data
 @Table(value = "bl_comments", pk = "coid")

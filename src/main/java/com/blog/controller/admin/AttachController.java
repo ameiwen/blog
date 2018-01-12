@@ -36,7 +36,6 @@ import java.util.Map;
 /**
  * 附件管理
  * <p>
- * Created by biezhi on 2017/2/21.
  */
 @Slf4j
 @Path("admin/attach")

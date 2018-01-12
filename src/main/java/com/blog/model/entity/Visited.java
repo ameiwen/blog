@@ -4,7 +4,6 @@ import com.blade.jdbc.annotation.Table;
 import com.blade.jdbc.core.ActiveRecord;
 import lombok.Data;
 
-import java.util.Date;
 
 @Data
 @Table(value = "bl_visited")

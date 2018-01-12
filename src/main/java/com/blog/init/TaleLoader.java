@@ -11,9 +11,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 
-/**
- * Created by biezhi on 2017/3/1.
- */
 public final class TaleLoader {
 
     private TaleLoader() {

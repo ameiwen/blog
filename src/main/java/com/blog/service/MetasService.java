@@ -15,7 +15,6 @@ import java.util.stream.Collectors;
 /**
  * 分类、标签Service
  *
- * @author biezhi
  * @since 1.3.1
  */
 @Bean

@@ -10,7 +10,6 @@ import java.util.List;
 /**
  * 文章归档
  * <p>
- * Created by biezhi on 2017/2/23.
  */
 @Data
 public class Archive extends ActiveRecord {

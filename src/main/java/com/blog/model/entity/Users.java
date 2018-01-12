@@ -7,7 +7,6 @@ import lombok.Data;
 /**
  * 用户
  *
- * @author biezhi
  */
 @Data
 @Table(value = "bl_users", pk = "uid")

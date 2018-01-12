@@ -32,7 +32,6 @@ import java.util.List;
 /**
  * Tale初始化进程
  *
- * @author biezhi
  */
 @Bean
 public class WebContext implements BeanProcessor {

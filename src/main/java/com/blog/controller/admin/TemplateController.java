@@ -24,7 +24,6 @@ import java.util.stream.Collectors;
 /**
  * 编辑模板
  * <p>
- * Created by biezhi on 2017/2/21.
  */
 @Slf4j
 @Path("admin/template")

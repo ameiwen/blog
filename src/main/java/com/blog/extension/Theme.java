@@ -23,7 +23,6 @@ import java.util.*;
 /**
  * 主题函数
  * <p>
- * Created by biezhi on 2017/2/28.
  */
 public final class Theme {
 
@@ -138,16 +137,7 @@ public final class Theme {
         return "";
     }
 
-    /**
-     * 获取文章作者
-     */
-    public static String getAuthor(){
-        Contents contents = current_article();
-        if(null!=contents){
-            return contents.getAuthor()+"";
-        }
-        return null;
-    }
+
     /**
      * 返回文章浏览数
      *

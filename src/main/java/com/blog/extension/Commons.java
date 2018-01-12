@@ -15,7 +15,6 @@ import java.util.regex.Pattern;
 /**
  * 公共函数
  * <p>
- * Created by biezhi on 2017/2/21.
  */
 public final class Commons {
 

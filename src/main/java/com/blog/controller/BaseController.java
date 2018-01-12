@@ -5,9 +5,6 @@ import com.blog.model.entity.Users;
 import com.blog.utils.MapCache;
 import com.blog.utils.BlogUtils;
 
-/**
- * Created by biezhi on 2017/2/21.
- */
 public abstract class BaseController {
 
     public static String THEME = "themes/default";

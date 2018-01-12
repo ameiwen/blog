@@ -7,7 +7,6 @@ import lombok.Data;
 /**
  * 配置选项
  *
- * @author biezhi
  */
 @Data
 @Table(value = "bl_options", pk = "name")
