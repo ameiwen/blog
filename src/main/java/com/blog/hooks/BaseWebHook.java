@@ -33,8 +33,8 @@ public class BaseWebHook implements WebHook {
             response.text("You have been banned, brother");
             return false;
         }
-        visitedService.saveVisited("118.114.204.150");
-        log.info("用户访问地址: {}, 来路地址: {}", uri, ip);
+        visitedService.saveVisited(ip);
+        log.info("用户访问地址: {}" , uri);
 
         if (uri.startsWith(TaleConst.STATIC_URI)) {
             return true;

@@ -18,10 +18,7 @@ import jetbrick.template.runtime.InterpretContext;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * 主题函数
@@ -141,6 +138,16 @@ public final class Theme {
         return "";
     }
 
+    /**
+     * 获取文章作者
+     */
+    public static String getAuthor(){
+        Contents contents = current_article();
+        if(null!=contents){
+            return contents.getAuthor()+"";
+        }
+        return null;
+    }
     /**
      * 返回文章浏览数
      *
