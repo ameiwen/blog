@@ -323,14 +323,14 @@ public final class Theme {
         if (null == contents) {
             return "";
         }
-        if (StringKit.isNotBlank(contents.getThumbImg())) {
-            return contents.getThumbImg();
-        }
-        String content = article(contents.getContent());
-        String img     = Commons.show_thumb(content);
-        if (StringKit.isNotBlank(img)) {
-            return img;
-        }
+//        if (StringKit.isNotBlank(contents.getThumbImg())) {
+//            return contents.getThumbImg();
+//        }
+//        String content = article(contents.getContent());
+//        String img     = Commons.show_thumb(content);
+//        if (StringKit.isNotBlank(img)) {
+//            return img;
+//        }
         int cid  = contents.getCid();
         int size = cid % 20;
         size = size == 0 ? 1 : size;
