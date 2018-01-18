@@ -44,7 +44,11 @@ public class CommentsService {
         try {
             comments.setOwner_id(contents.getAuthorId());
             comments.setCreated(DateKit.nowUnix());
-            comments.setParent(comments.getCoid());
+            if(null!=comments.getParent()){
+                comments.setParent(comments.getParent());
+            }else {
+                comments.setParent(comments.getCoid());
+            }
             comments.setCoid(null);
             comments.save();
 
