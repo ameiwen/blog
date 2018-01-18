@@ -185,7 +185,7 @@ public final class Commons {
      * @return
      */
     public static String fmtdate(Integer unixTime) {
-        return fmtdate(unixTime, "yyyy-MM-dd");
+        return fmtdate(unixTime, "yyyy-MM-dd HH:mm:ss");
     }
 
     /**
