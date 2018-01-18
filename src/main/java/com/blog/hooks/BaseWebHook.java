@@ -27,12 +27,8 @@ public class BaseWebHook implements WebHook {
 
         String uri = request.uri();
         String ip  = request.host();
-        if(ip!=null && !"".equals(ip)) {
-            int endIndex = ip.lastIndexOf(":");
-            ip = ip.substring(0,endIndex);
-        }
-        visitedService.saveVisited(ip);
-        log.info("来路IP:{}", ip);
+        visitedService.saveVisited(BlogUtils.getUserIp(request));
+        log.info("来路IP:{}", BlogUtils.getUserIp(request));
 
         if (uri.startsWith(TaleConst.STATIC_URI)) {
             return true;

@@ -418,4 +418,12 @@ public class BlogUtils {
         }
         return null;
     }
+    public static String getUserIp(Request request){
+        String host = request.host();
+        if(host!=null && !"".equals(host)) {
+            int endIndex = host.lastIndexOf(":");
+            return host.substring(0,endIndex);
+        }
+        return "";
+    }
 }
