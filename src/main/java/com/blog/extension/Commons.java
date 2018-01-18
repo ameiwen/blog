@@ -167,6 +167,9 @@ public final class Commons {
      * @return
      */
     public static String gravatar(String email) {
+        if(TaleConst.MY_EMAIL.equals(email)){
+            return "http://yangxs.oss-cn-beijing.aliyuncs.com/myhead/head.jpg";
+        }
         if (!TaleConst.ENABLED_CDN) {
             return "/static/admin/images/unicorn.png";
         }

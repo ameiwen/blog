@@ -7,7 +7,7 @@ import com.blog.model.dto.PluginMenu;
 import java.util.*;
 
 /**
- * Tale 常量存储
+ * Blog 常量存储
  *
  */
 public class TaleConst {
@@ -19,6 +19,7 @@ public class TaleConst {
     public static       Boolean     INSTALLED         = false;
     public static       Boolean     ENABLED_CDN       = true;
     public static       Environment BCONF             = null;
+    public static final String MY_EMAIL="yanghbwork@163.com";
 
     /**
      * 最大页码
