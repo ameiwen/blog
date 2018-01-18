@@ -587,6 +587,9 @@ public final class Theme {
      */
     public static String social_link(String type) {
         String id = Commons.site_option("social_" + type);
+        if(id==null || "".equals(id)){
+            return null;
+        }
         switch (type) {
             case "github":
                 return "https://github.com/" + id;
