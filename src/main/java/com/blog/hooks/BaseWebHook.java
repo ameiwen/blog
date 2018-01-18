@@ -26,15 +26,13 @@ public class BaseWebHook implements WebHook {
         Response response = signature.response();
 
         String uri = request.uri();
-        String ip  = request.address();
-
-        // 禁止该ip访问
-        if (TaleConst.BLOCK_IPS.contains(ip)) {
-            response.text("You have been banned, brother");
-            return false;
+        String ip  = request.host();
+        if(ip!=null && !"".equals(ip)) {
+            int endIndex = ip.lastIndexOf(":");
+            ip = ip.substring(0,endIndex);
         }
         visitedService.saveVisited(ip);
-        log.info("用户访问地址: {}" , uri);
+        log.info("来路IP:{}", ip);
 
         if (uri.startsWith(TaleConst.STATIC_URI)) {
             return true;
