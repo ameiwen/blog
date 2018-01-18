@@ -113,7 +113,7 @@ public class CommentController extends BaseController {
         comments.setAuthor(users.getUsername());
         comments.setAuthor_id(users.getUid());
         comments.setCid(c.getCid());
-        comments.setIp(request.address());
+        comments.setIp(BlogUtils.getUserIp(request));
         comments.setUrl(users.getHome_url());
         comments.setContent(content);
         if (StringKit.isNotBlank(users.getEmail())) {
