@@ -116,12 +116,12 @@ public class CommentController extends BaseController {
         comments.setIp(BlogUtils.getUserIp(request));
         comments.setUrl(users.getHome_url());
         comments.setContent(content);
+        comments.setParent(coid);
         if (StringKit.isNotBlank(users.getEmail())) {
             comments.setMail(users.getEmail());
         } else {
             comments.setMail("yanghbwork@163.com");
         }
-        comments.setParent(coid);
         try {
             commentsService.saveComment(comments);
             siteService.cleanCache(Types.C_STATISTICS);
