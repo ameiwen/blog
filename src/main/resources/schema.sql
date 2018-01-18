@@ -254,3 +254,25 @@ create table bl_visited
 )
 charset = UTF8;
 
+drop table if exists bl_email_task;
+
+/*==============================================================*/
+/* Table: bl_email_task                                         */
+/*==============================================================*/
+create table bl_email_task
+(
+   id                   int not null auto_increment,
+   cid                  integer,
+   author               varchar(100),
+   msg                  varchar(500),
+   email                varchar(100),
+   status               char(1) default '0',
+   function_name        varchar(100),
+   ip                   varchar(100),
+   send_time            datetime,
+   create_time          datetime default CURRENT_TIMESTAMP,
+   primary key (id)
+)
+charset = UTF8;
+
+
