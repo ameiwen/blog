@@ -110,7 +110,7 @@ public class CommentController extends BaseController {
         content = EmojiParser.parseToAliases(content);
 
         Comments comments = new Comments();
-        comments.setAuthor(users.getUsername());
+        comments.setAuthor(users.getScreen_name());
         comments.setAuthor_id(users.getUid());
         comments.setCid(c.getCid());
         comments.setIp(BlogUtils.getUserIp(request));
