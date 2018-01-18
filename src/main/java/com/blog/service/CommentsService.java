@@ -10,6 +10,7 @@ import com.blog.exception.TipException;
 import com.blog.model.dto.Comment;
 import com.blog.model.entity.Comments;
 import com.blog.model.entity.Contents;
+import com.blog.model.entity.Email;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +25,9 @@ public class CommentsService {
 
     @Inject
     private ContentsService contentsService;
+
+    @Inject
+    private EmailTaskService emailTaskService;
 
     /**
      * 保存评论
@@ -46,6 +50,16 @@ public class CommentsService {
             comments.setCreated(DateKit.nowUnix());
             if(null!=comments.getParent()){
                 comments.setParent(comments.getParent());
+                Comments reciver = new Comments().where("coid",comments.getParent()).find();
+                //回复
+                Email emailTask = new Email();
+                emailTask.setCid(comments.getCid());
+                emailTask.setAuthor(comments.getAuthor());
+                emailTask.setMsg(comments.getContent());
+                emailTask.setIp(comments.getIp());
+                emailTask.setFunction_name("reply");
+                emailTask.setEmail(reciver.getMail());
+                emailTaskService.saveEmailTask(emailTask);
             }else {
                 comments.setParent(comments.getCoid());
             }

@@ -19,7 +19,6 @@ import com.blog.model.dto.ErrorCode;
 import com.blog.model.dto.Types;
 import com.blog.model.entity.Comments;
 import com.blog.model.entity.Contents;
-import com.blog.model.entity.Email;
 import com.blog.model.entity.Metas;
 import com.blog.service.*;
 import com.blog.utils.BlogUtils;
@@ -52,7 +51,8 @@ public class IndexController extends BaseController {
     private SiteService siteService;
 
     @Inject
-    private EmailTaskService emailTaskService;
+    private VisitedService visitedService;
+
 
     /**
      * 首页
@@ -61,6 +61,8 @@ public class IndexController extends BaseController {
      */
     @GetRoute
     public String index(Request request, @Param(defaultValue = "12") int limit) {
+        //日志记录
+        visitedService.saveVisited(BlogUtils.getUserIp(request));
         return this.index(request, 1, limit);
     }
 
@@ -274,16 +276,8 @@ public class IndexController extends BaseController {
         comments.setIp(request.address());
         comments.setParent(comments.getCoid());
 
-        Email emailTask = new Email();
-        emailTask.setCid(comments.getCid());
-        emailTask.setAuthor(comments.getAuthor());
-        emailTask.setMsg(comments.getContent());
-        emailTask.setIp(comments.getIp());
-        emailTask.setFunction_name("reply");
-        emailTask.setEmail(comments.getMail());
         try {
             commentsService.saveComment(comments);
-            emailTaskService.saveEmailTask(emailTask);
             response.cookie("tale_remember_author", URLEncoder.encode(comments.getAuthor(), "UTF-8"), 7 * 24 * 60 * 60);
             response.cookie("tale_remember_mail", URLEncoder.encode(comments.getMail(), "UTF-8"), 7 * 24 * 60 * 60);
             if (StringKit.isNotBlank(comments.getUrl())) {
