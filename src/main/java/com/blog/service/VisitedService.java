@@ -17,6 +17,7 @@ public class VisitedService {
         Visited visited = new Visited().where("ip",ip).find();
         if(null!=visited){
             visited.setVisited_num(visited.getVisited_num()+1);
+            visited.setCreate_time((int) (System.currentTimeMillis()/1000));
             visited.update(visited.getId());
         }else{
             Map<String,Object> address = BlogUtils.getIpAddress(ip);
@@ -31,6 +32,16 @@ public class VisitedService {
                 visited.setCreate_time((int) (System.currentTimeMillis()/1000));
                 visited.save();
             }
+        }
+    }
+
+    /**
+     * 删除访问记录
+     * @param id
+     */
+    public void removeVisited(Integer id){
+        if(null !=id){
+            new Visited().delete(id);
         }
     }
 

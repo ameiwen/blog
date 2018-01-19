@@ -16,6 +16,7 @@ import com.blog.model.dto.Types;
 import com.blog.model.entity.Contents;
 import com.blog.model.entity.Logs;
 import com.blog.model.entity.Users;
+import com.blog.model.entity.Visited;
 import com.blog.service.ContentsService;
 import com.blog.service.SiteService;
 import lombok.extern.slf4j.Slf4j;
@@ -43,6 +44,13 @@ public class PageController extends BaseController {
         Page<Contents> contentsPage = new Contents().where("type", Types.PAGE).page(1, TaleConst.MAX_POSTS, "created desc");
         request.attribute("articles", contentsPage);
         return "admin/page_list";
+    }
+
+    @Route(value = "visited", method = HttpMethod.GET)
+    public String visited(Request request) {
+        Page<Visited> visitedPage = new Visited().page(1, TaleConst.MAX_POSTS, "create_time desc");
+        request.attribute("visited", visitedPage);
+        return "admin/visited.html";
     }
 
     @Route(value = "new", method = HttpMethod.GET)

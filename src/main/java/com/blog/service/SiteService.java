@@ -123,6 +123,7 @@ public class SiteService {
         long attachs    = new Attach().count();
         long tags       = new Metas().where("type", Types.TAG).count();
         long categories = new Metas().where("type", Types.CATEGORY).count();
+        long visited    = new Visited().count();
 
         statistics.setArticles(articles);
         statistics.setPages(pages);
@@ -130,6 +131,7 @@ public class SiteService {
         statistics.setAttachs(attachs);
         statistics.setTags(tags);
         statistics.setCategories(categories);
+        statistics.setVisitednum(visited);
 
         mapCache.set(Types.C_STATISTICS, statistics);
         return statistics;
