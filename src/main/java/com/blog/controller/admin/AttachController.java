@@ -22,6 +22,7 @@ import com.blog.model.entity.Logs;
 import com.blog.model.entity.Users;
 import com.blog.service.SiteService;
 import com.blog.utils.BlogUtils;
+import com.blog.utils.UploadUtils;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;
@@ -94,11 +95,10 @@ public class AttachController extends BaseController {
                     String fkey = BlogUtils.getFileKey(fname);
 
                     String ftype = f.getContentType().contains("image") ? Types.IMAGE : Types.FILE;
-                    String filePath = BlogUtils.UP_DIR + fkey;
 
                     try {
-                        Files.write(Paths.get(filePath), f.getData());
-                    } catch (IOException e) {
+                        UploadUtils.uploadAliyun(fkey,f.getData());
+                    } catch (Exception e) {
                         log.error("", e);
                     }
 
@@ -143,12 +143,8 @@ public class AttachController extends BaseController {
             }
             String fkey = attach.getFkey();
             siteService.cleanCache(Types.C_STATISTICS);
-            String             filePath = CLASSPATH.substring(0, CLASSPATH.length() - 1) + fkey;
-            java.nio.file.Path path     = Paths.get(filePath);
-            log.info("Delete attach: [{}]", filePath);
-            if (Files.exists(path)) {
-                Files.delete(path);
-            }
+            UploadUtils.delete(fkey);
+            log.info("Delete attach: [{}]", fkey);
             attach.delete(id);
             new Logs(LogActions.DEL_ATTACH, fkey, request.address(), this.getUid()).save();
         } catch (Exception e) {
