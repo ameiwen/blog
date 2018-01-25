@@ -3,6 +3,7 @@ package com.blog.utils;
 import com.aliyun.oss.ClientException;
 import com.aliyun.oss.OSSClient;
 import com.aliyun.oss.OSSException;
+import com.aliyun.oss.model.CannedAccessControlList;
 import com.aliyun.oss.model.PutObjectRequest;
 import com.blog.comment.Constants;
 import lombok.extern.slf4j.Slf4j;
@@ -24,6 +25,7 @@ public class UploadUtils {
              *  this way of uploading by byte.
              */
             try {
+                client.setObjectAcl(Constants.BUCKET_NAME, key, CannedAccessControlList.PublicRead);
                 client.putObject(new PutObjectRequest(Constants.BUCKET_NAME, key, new ByteArrayInputStream(bytes)));
             } catch (Exception e) {
                 e.printStackTrace();

@@ -11,6 +11,6 @@ public class Constants {
     public static final String ACCESS_KEY_SECRET = "6qjVq9gbihH84ANb4puHbXznjTd4xt";
 
     public static final String BUCKET_NAME = "yangxs";
-    public static final String KEY = "/article/a.txt";
+    public static final String URL="http://oss-cn-beijing.aliyuncs.com/";
 
 }

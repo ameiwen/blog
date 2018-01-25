@@ -11,6 +11,7 @@ import com.blade.mvc.http.HttpMethod;
 import com.blade.mvc.http.Request;
 import com.blade.mvc.multipart.FileItem;
 import com.blade.mvc.ui.RestResponse;
+import com.blog.comment.Constants;
 import com.blog.controller.BaseController;
 import com.blog.exception.TipException;
 import com.blog.extension.Commons;
@@ -62,7 +63,7 @@ public class AttachController extends BaseController {
         Attach attach  = new Attach();
         Page<Attach> attachPage = attach.page(page, limit);
         request.attribute("attachs", attachPage);
-        request.attribute(Types.ATTACH_URL, Commons.site_option(Types.ATTACH_URL, Commons.site_url()));
+        request.attribute(Types.ATTACH_URL, Constants.URL);
         request.attribute("max_file_size", TaleConst.MAX_FILE_SIZE / 1024);
         return "admin/attach";
     }
