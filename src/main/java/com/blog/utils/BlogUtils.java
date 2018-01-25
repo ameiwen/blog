@@ -380,7 +380,7 @@ public class BlogUtils {
     public static final String UP_DIR = AttachController.CLASSPATH.substring(0, AttachController.CLASSPATH.length() - 1);
 
     public static String getFileKey(String name) {
-        String prefix = "/upload/" + DateKit.toString(new Date(), "yyyy/MM");
+        String prefix = "article/" + DateKit.toString(new Date(), "yyyy/MM");
         String dir    = UP_DIR + prefix;
         if (!Files.exists(Paths.get(dir))) {
             new File(dir).mkdirs();
