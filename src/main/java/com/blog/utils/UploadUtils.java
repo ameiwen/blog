@@ -25,10 +25,10 @@ public class UploadUtils {
              *  this way of uploading by byte.
              */
             try {
-                client.setObjectAcl(Constants.BUCKET_NAME, key, CannedAccessControlList.PublicRead);
                 client.putObject(new PutObjectRequest(Constants.BUCKET_NAME, key, new ByteArrayInputStream(bytes)));
+                client.setObjectAcl(Constants.BUCKET_NAME, key, CannedAccessControlList.PublicRead);
             } catch (Exception e) {
-                e.printStackTrace();
+                log.error("upload object error",e);
             }
         } catch (OSSException oe) {
             log.error("Caught an OSSException, which means your request made it to OSS, "
