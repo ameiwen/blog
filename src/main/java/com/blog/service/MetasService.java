@@ -8,6 +8,7 @@ import com.blog.model.dto.Types;
 import com.blog.model.entity.Contents;
 import com.blog.model.entity.Metas;
 import com.blog.model.entity.Relationships;
+import com.blog.utils.BlogUtils;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -112,7 +113,7 @@ public class MetasService {
             metas.setSlug(name);
             metas.setName(name);
             metas.setType(type);
-            mid = metas.save();
+            mid = BlogUtils.parseInteger(metas.save().toString());
         }
         if (mid != 0) {
             long count = new Relationships().where("cid", cid).and("mid", mid).count();

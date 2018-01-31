@@ -389,6 +389,23 @@ public class BlogUtils {
     }
 
     /**
+     * 转换为Integer格式
+     * @param s
+     * @return
+     */
+    public static Integer parseInteger(String s){
+        if(s == null) {
+            return 0;
+        }
+        try {
+            s = s.trim().replace(",", "");
+            return Integer.parseInt(s);
+        } catch (Exception e) {
+            return 0;
+        }
+    }
+
+    /**
      * 接口地址：https://market.aliyun.com/products/57002003/cmapi010805.html?spm=5176.10695662.1996646101.searchclickresult.5684c326uqjqGf#sku=yuncode480500000
      * ip    ip地址   xxx.75.225.254
      * country 国家   中国

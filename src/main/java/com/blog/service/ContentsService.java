@@ -94,7 +94,7 @@ public class ContentsService {
         String tags       = contents.getTags();
         String categories = contents.getCategories();
 
-        Integer cid = contents.save();
+        Integer cid = BlogUtils.parseInteger(contents.save().toString());
 
         metasService.saveMetas(cid, tags, Types.TAG);
         metasService.saveMetas(cid, categories, Types.CATEGORY);
