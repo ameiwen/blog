@@ -1,7 +1,3 @@
-This is the source of my blog project
-
-If you have a problem,you can contact me.
-
-Thanks
-
-The blog Url:https://yangxs.ink
+轻量级博客系统初改版：
+原版： tale
+演示站点 : https://yangxs.ink
