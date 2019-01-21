@@ -2,4 +2,4 @@
 
 原版： tale
 
-演示站点 : https://yangxs.ink
+演示站点 : https://www.mecarserver.xyz/
