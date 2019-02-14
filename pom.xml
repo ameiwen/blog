@@ -16,7 +16,7 @@
       <commonmark.version>0.9.0</commonmark.version>
       <rome.version>1.0</rome.version>
       <emoji.version>3.2.0</emoji.version>
-      <fastJson.version>1.2.15</fastJson.version>
+      <fastJson.version>1.2.31</fastJson.version>
       <commons.lang.version>2.6</commons.lang.version>
       <jetty.version>9.3.7.v20160115</jetty.version>
   </properties>
